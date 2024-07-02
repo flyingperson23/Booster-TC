@@ -1,0 +1,5 @@
+../Core/Src/cmds.c:13:7:getSaveStatus	16	static
+../Core/Src/cmds.c:22:6:inc	4	static
+../Core/Src/cmds.c:25:9:CMD_get	56	static
+../Core/Src/cmds.c:48:9:CMD_set	40	static
+../Core/Src/cmds.c:80:6:cmds_init	16	static

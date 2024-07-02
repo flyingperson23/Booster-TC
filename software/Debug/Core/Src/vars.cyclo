@@ -1,0 +1,8 @@
+../Core/Src/vars.c:13:6:addVars	1
+../Core/Src/vars.c:20:6:addVar	1
+../Core/Src/vars.c:31:7:getVar	1
+../Core/Src/vars.c:35:8:getIndex	3
+../Core/Src/vars.c:44:9:fillVars	12
+../Core/Src/vars.c:75:6:writeVars	2
+../Core/Src/vars.c:84:6:Flash_Read_Data	2
+../Core/Src/vars.c:93:6:Flash_Write_Data	2
