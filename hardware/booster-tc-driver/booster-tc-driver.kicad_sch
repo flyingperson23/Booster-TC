@@ -4951,6 +4951,265 @@
 				)
 			)
 		)
+		(symbol "SI4056ADY-T1-GE3:SI4056ADY-T1-GE3"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q"
+				(at 21.59 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "SI4056ADY-T1-GE3"
+				(at 21.59 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "SOIC127P600X175-8N"
+				(at 21.59 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.vishay.com/docs/78131/si4056ady.pdf"
+				(at 21.59 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MOSFET 100V N-CH D-S MOSFET"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.75"
+				(at 21.59 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "78-SI4056ADY-T1-GE3"
+				(at 21.59 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/SI4056ADY-T1-GE3?qs=zW32dvEIR3uc80Vvb9eHdA%3D%3D"
+				(at 21.59 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Vishay"
+				(at 21.59 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "SI4056ADY-T1-GE3"
+				(at 21.59 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "SI4056ADY-T1-GE3_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 20.32 -10.16)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "S_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "S_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "S_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -7.62 180)
+					(length 5.08)
+					(name "D_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -5.08 180)
+					(length 5.08)
+					(name "D_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 -2.54 180)
+					(length 5.08)
+					(name "D_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 25.4 0 180)
+					(length 5.08)
+					(name "D_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Transistor_FET:T2N7002AK"
 			(pin_names hide)
 			(exclude_from_sim no)
@@ -5672,6 +5931,221 @@
 						)
 					)
 					(number "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at -2.54 1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "22-23-2021"
+				(at 1.27 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm"
+				(at 5.08 5.08 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf"
+				(at 5.08 7.62 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "CONN HEADER VERT 2POS 2.54MM"
+				(at 5.08 10.16 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "MPN" "22-23-2021"
+				(at 5.08 12.7 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Category" "Connectors, Interconnects"
+				(at 5.08 15.24 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Family" "Rectangular Connectors - Headers, Male Pins"
+				(at 5.08 17.78 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Datasheet_Link" "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf"
+				(at 5.08 20.32 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "DK_Detail_Page" "/product-detail/en/molex/22-23-2021/WM4200-ND/26667"
+				(at 5.08 22.86 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description_1" "CONN HEADER VERT 2POS 2.54MM"
+				(at 5.08 25.4 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer" "Molex"
+				(at 5.08 27.94 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Status" "Active"
+				(at 5.08 30.48 0)
+				(effects
+					(font
+						(size 1.524 1.524)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "WM4200-ND KK 6373"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "22-23-2021_1_1"
+				(rectangle
+					(start -1.27 0)
+					(end 3.81 -2.54)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -0.254 -1.143)
+					(end 0.254 -1.651)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 2.286 -1.143)
+					(end 2.794 -1.651)
+					(stroke
+						(width 0)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 2.54 2.54 270)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -6403,6 +6877,12 @@
 		(uuid "1bc3b4e0-2da5-47f0-89ec-08df7f740559")
 	)
 	(junction
+		(at 93.98 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1d50ecac-e900-45f6-ab49-621034df97b4")
+	)
+	(junction
 		(at 67.31 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6419,6 +6899,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "30209f2b-5ada-43de-b192-e7a90122e943")
+	)
+	(junction
+		(at 101.6 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "37236ebb-c8af-4530-baf4-b41e08fa13f8")
 	)
 	(junction
 		(at 194.31 35.56)
@@ -6439,10 +6925,22 @@
 		(uuid "4ec3300a-2c8c-444a-9eee-884eddca608e")
 	)
 	(junction
+		(at 144.78 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4f42e767-4c2a-49e2-bbf6-218f98c37593")
+	)
+	(junction
 		(at 82.55 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fbf3b8a-0b41-47f3-968e-6dee5c8ddc56")
+	)
+	(junction
+		(at 77.47 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52091692-30f7-4dee-9586-5f6f98ed4623")
 	)
 	(junction
 		(at 78.74 130.81)
@@ -6481,12 +6979,6 @@
 		(uuid "6549cecc-5b90-4295-a921-c6cebc57a5e9")
 	)
 	(junction
-		(at 199.39 67.31)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68d2280b-fe35-458f-b004-2a89c1d97c16")
-	)
-	(junction
 		(at 45.72 43.18)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6511,10 +7003,22 @@
 		(uuid "76d03ba7-c909-4150-9bae-7c75149048f9")
 	)
 	(junction
+		(at 87.63 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7a0ab2bd-d0ed-4390-8d15-0deeb0364627")
+	)
+	(junction
 		(at 208.28 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7fd9b506-1523-4741-b5c7-212fbe3ef9e4")
+	)
+	(junction
+		(at 170.18 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "80636e13-6a35-4830-aabf-59b1923e07d9")
 	)
 	(junction
 		(at 157.48 26.67)
@@ -6535,7 +7039,7 @@
 		(uuid "8b4af972-9db6-46a7-b2a0-57e9cefd18fd")
 	)
 	(junction
-		(at 59.69 143.51)
+		(at 48.26 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e3d7672-695b-40f8-8340-0ca49c75318a")
@@ -6545,6 +7049,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8e684e69-bca7-4470-bb0a-09e61d9b6898")
+	)
+	(junction
+		(at 144.78 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8e6b39bd-77c4-48c2-9e50-a7190c1e81e6")
 	)
 	(junction
 		(at 95.25 72.39)
@@ -6563,6 +7073,24 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "95541030-3b0c-4851-925a-d15924efac5a")
+	)
+	(junction
+		(at 170.18 163.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9623a1b2-1c28-4b42-ba07-29a7548525a3")
+	)
+	(junction
+		(at 77.47 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9a67e485-cae9-4230-8bb6-949b69f460d3")
+	)
+	(junction
+		(at 170.18 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9de05874-ebd9-4a2d-a2e4-51a7fec73af4")
 	)
 	(junction
 		(at 39.37 43.18)
@@ -6601,7 +7129,13 @@
 		(uuid "bf48be95-95ea-4c6d-8e56-03c8a36ecabc")
 	)
 	(junction
-		(at 59.69 156.21)
+		(at 144.78 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfa1bd53-95d1-426b-9e14-f2a26bf84d90")
+	)
+	(junction
+		(at 48.26 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bff26db9-aefe-455f-981e-77a70e29f479")
@@ -6625,13 +7159,19 @@
 		(uuid "dcb7ee9b-e2a8-4b66-8032-44e46cedf96f")
 	)
 	(junction
+		(at 101.6 162.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dfd9ccf6-063a-4116-af23-d31602cd81ef")
+	)
+	(junction
 		(at 58.42 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3c4d98c-7a47-41bc-8d49-b07da42ed3bf")
 	)
 	(junction
-		(at 54.61 156.21)
+		(at 43.18 165.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e77eaf9c-ce34-4757-9520-77db493e39b0")
@@ -6641,6 +7181,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f00723bd-fd76-4cfb-b906-3a4660d93511")
+	)
+	(junction
+		(at 144.78 181.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f5def073-0f79-4478-a563-65514bcb17c9")
+	)
+	(junction
+		(at 170.18 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f6cdb4d1-df47-422b-85c5-38c994258abf")
 	)
 	(junction
 		(at 88.9 123.19)
@@ -6679,6 +7231,26 @@
 			(type default)
 		)
 		(uuid "0262d60d-1cbd-4d4f-a547-4620cb7dd721")
+	)
+	(wire
+		(pts
+			(xy 170.18 184.15) (xy 170.18 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "044143ec-156b-48ae-aa4d-b8c1e217b5e0")
+	)
+	(wire
+		(pts
+			(xy 179.07 97.79) (xy 189.23 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0581c6f0-e80c-45f3-b319-44a89fc857a7")
 	)
 	(wire
 		(pts
@@ -6722,6 +7294,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 158.75) (xy 144.78 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0eef2852-357a-418a-a328-93a353e9bae1")
+	)
+	(wire
+		(pts
 			(xy 64.77 35.56) (xy 71.12 35.56)
 		)
 		(stroke
@@ -6762,6 +7344,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 181.61) (xy 77.47 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "188d351a-1ebf-4219-a170-72313341df9c")
+	)
+	(wire
+		(pts
 			(xy 52.07 43.18) (xy 58.42 43.18)
 		)
 		(stroke
@@ -6789,6 +7381,16 @@
 			(type default)
 		)
 		(uuid "1b7106c5-1604-4fca-b6b5-cbbf3ade459e")
+	)
+	(wire
+		(pts
+			(xy 144.78 161.29) (xy 144.78 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cae519f-d322-44f4-8cfa-1b42de0f5a4d")
 	)
 	(wire
 		(pts
@@ -6822,6 +7424,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 189.23) (xy 144.78 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "205e44b7-278e-4687-9459-ce53100aa3b9")
+	)
+	(wire
+		(pts
 			(xy 55.88 74.93) (xy 67.31 74.93)
 		)
 		(stroke
@@ -6829,6 +7441,16 @@
 			(type default)
 		)
 		(uuid "224d2371-11b3-41d1-b80c-a7243876af14")
+	)
+	(wire
+		(pts
+			(xy 170.18 186.69) (xy 170.18 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "238d19f1-c313-415b-8632-9074069483c9")
 	)
 	(wire
 		(pts
@@ -6902,16 +7524,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 67.31) (xy 199.39 67.31)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "312ebf84-7f84-4384-945a-3874298657f2")
-	)
-	(wire
-		(pts
 			(xy 83.82 132.08) (xy 83.82 128.27)
 		)
 		(stroke
@@ -6949,6 +7561,16 @@
 			(type default)
 		)
 		(uuid "3ab36013-261d-44b4-8fdb-cc5307567770")
+	)
+	(wire
+		(pts
+			(xy 101.6 162.56) (xy 106.68 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3acf85ea-1840-4a26-a707-ae9685fb1049")
 	)
 	(wire
 		(pts
@@ -7012,13 +7634,23 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 143.51) (xy 59.69 143.51)
+			(xy 43.18 152.4) (xy 48.26 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "43eec156-c91b-4585-96f4-1e64fceb9e59")
+	)
+	(wire
+		(pts
+			(xy 179.07 67.31) (xy 186.69 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "458ce6b2-9952-4149-95aa-9675ee1c0a6c")
 	)
 	(wire
 		(pts
@@ -7029,6 +7661,26 @@
 			(type default)
 		)
 		(uuid "47bd0bfb-7c91-42b0-be92-8fef8211a291")
+	)
+	(wire
+		(pts
+			(xy 144.78 181.61) (xy 144.78 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "493cdfe1-b6cd-4c12-8ae5-9ab07d129ee3")
+	)
+	(wire
+		(pts
+			(xy 144.78 184.15) (xy 144.78 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4adb9e5c-d00c-4b2b-adc9-caa18c7ed36e")
 	)
 	(wire
 		(pts
@@ -7082,6 +7734,16 @@
 	)
 	(wire
 		(pts
+			(xy 100.33 96.52) (xy 110.49 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "536759dc-3669-44dd-a880-aba51a28cdbb")
+	)
+	(wire
+		(pts
 			(xy 161.29 143.51) (xy 163.83 143.51)
 		)
 		(stroke
@@ -7132,13 +7794,33 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 170.18) (xy 53.34 171.45)
+			(xy 130.81 82.55) (xy 143.51 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5882e59c-0e2f-4aa5-b969-b44122bcdbbb")
+	)
+	(wire
+		(pts
+			(xy 41.91 179.07) (xy 41.91 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "59c2c134-9fa9-4f87-9bc2-07374f4adbce")
+	)
+	(wire
+		(pts
+			(xy 93.98 170.18) (xy 101.6 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a1328cc-dd37-4886-aa2c-faecb5da310e")
 	)
 	(wire
 		(pts
@@ -7182,6 +7864,26 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 176.53) (xy 72.39 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6299766d-fe4d-4bbc-a28d-661f9ad6511f")
+	)
+	(wire
+		(pts
+			(xy 100.33 104.14) (xy 110.49 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63485d5e-a500-4c4c-b832-e9f60f5fb2f0")
+	)
+	(wire
+		(pts
 			(xy 95.25 72.39) (xy 100.33 72.39)
 		)
 		(stroke
@@ -7202,16 +7904,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 123.19) (xy 190.5 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6666733d-4ae8-4044-8f00-6dbde8c11597")
-	)
-	(wire
-		(pts
 			(xy 179.07 105.41) (xy 189.23 105.41)
 		)
 		(stroke
@@ -7229,6 +7921,16 @@
 			(type default)
 		)
 		(uuid "68bef90b-d354-4f3c-af19-c6527f52bfa1")
+	)
+	(wire
+		(pts
+			(xy 179.07 59.69) (xy 186.69 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "694dca22-9934-474c-ae34-7f43deb1c06f")
 	)
 	(wire
 		(pts
@@ -7299,6 +8001,26 @@
 			(type default)
 		)
 		(uuid "758b55d5-cf3c-4f97-aa37-74e486fa403a")
+	)
+	(wire
+		(pts
+			(xy 179.07 133.35) (xy 191.77 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75c63b09-d68c-4fdc-8095-febb0dc3500f")
+	)
+	(wire
+		(pts
+			(xy 179.07 113.03) (xy 189.23 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76398bb3-554e-4cf2-b507-5b3131dfcd62")
 	)
 	(wire
 		(pts
@@ -7402,6 +8124,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 185.42) (xy 83.82 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "82f76555-4c15-49ce-b74b-eff8f7387b24")
+	)
+	(wire
+		(pts
 			(xy 161.29 22.86) (xy 157.48 22.86)
 		)
 		(stroke
@@ -7422,6 +8154,16 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 118.11) (xy 189.23 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ea34a5-62e0-4aa5-aa45-480ae73515e7")
+	)
+	(wire
+		(pts
 			(xy 41.91 71.12) (xy 41.91 74.93)
 		)
 		(stroke
@@ -7432,7 +8174,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 161.29) (xy 53.34 162.56)
+			(xy 41.91 170.18) (xy 41.91 171.45)
 		)
 		(stroke
 			(width 0)
@@ -7482,6 +8224,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 85.09) (xy 143.51 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b6f86d7-4383-4b39-bd6e-6a350833fa80")
+	)
+	(wire
+		(pts
 			(xy 133.35 120.65) (xy 143.51 120.65)
 		)
 		(stroke
@@ -7492,7 +8244,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 156.21) (xy 59.69 156.21)
+			(xy 43.18 165.1) (xy 48.26 165.1)
 		)
 		(stroke
 			(width 0)
@@ -7512,6 +8264,26 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 74.93) (xy 189.23 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a45e02e3-bff6-4026-bd59-8b8d7cd5b975")
+	)
+	(wire
+		(pts
+			(xy 170.18 161.29) (xy 170.18 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a58a75a6-7dac-49f1-b232-8411b54266a7")
+	)
+	(wire
+		(pts
 			(xy 52.07 35.56) (xy 58.42 35.56)
 		)
 		(stroke
@@ -7519,6 +8291,26 @@
 			(type default)
 		)
 		(uuid "a67b0816-5ce6-4098-abaa-1993fb19ad24")
+	)
+	(wire
+		(pts
+			(xy 134.62 92.71) (xy 143.51 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8942c10-7365-4c41-afea-2e2f2f634e89")
+	)
+	(wire
+		(pts
+			(xy 179.07 135.89) (xy 191.77 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a904e1ee-dca6-42a8-bdac-b128d5165232")
 	)
 	(wire
 		(pts
@@ -7532,6 +8324,56 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 181.61) (xy 170.18 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa102463-9141-4600-9e1d-5be03d8c8174")
+	)
+	(wire
+		(pts
+			(xy 179.07 62.23) (xy 186.69 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa4919e7-99aa-4547-8da6-166ae9108dfa")
+	)
+	(wire
+		(pts
+			(xy 77.47 170.18) (xy 77.47 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aac9241b-bc18-45e8-ab50-f1b24757fd80")
+	)
+	(wire
+		(pts
+			(xy 134.62 97.79) (xy 143.51 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac148e4b-98a1-42c9-b7d5-70b4a4baa30d")
+	)
+	(wire
+		(pts
+			(xy 87.63 162.56) (xy 93.98 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad171b7e-7b35-429e-add7-0368e9d3b01f")
+	)
+	(wire
+		(pts
 			(xy 212.09 31.75) (xy 226.06 31.75)
 		)
 		(stroke
@@ -7539,6 +8381,16 @@
 			(type default)
 		)
 		(uuid "ae1d6184-8fa7-4eb8-aa9d-734bbc17db33")
+	)
+	(wire
+		(pts
+			(xy 179.07 57.15) (xy 186.69 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae8ae933-9791-43d0-9df0-93458267c4f0")
 	)
 	(wire
 		(pts
@@ -7552,7 +8404,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 142.24) (xy 59.69 143.51)
+			(xy 100.33 106.68) (xy 110.49 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af48d72a-8cf1-414b-86a8-ad8c374a226d")
+	)
+	(wire
+		(pts
+			(xy 135.89 166.37) (xy 144.78 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af732769-7940-4d0f-b0b7-6d4fbd4d2ffe")
+	)
+	(wire
+		(pts
+			(xy 48.26 151.13) (xy 48.26 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7582,13 +8454,43 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 156.21) (xy 54.61 156.21)
+			(xy 41.91 165.1) (xy 43.18 165.1)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b5cc52e2-9bbd-4bf5-addd-9a81289372f8")
+	)
+	(wire
+		(pts
+			(xy 77.47 181.61) (xy 87.63 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6364e01-84fe-4635-8d99-4a44d230ec74")
+	)
+	(wire
+		(pts
+			(xy 72.39 162.56) (xy 77.47 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b69fd051-bc64-40cb-8589-9d08fe1a4cc0")
+	)
+	(wire
+		(pts
+			(xy 170.18 163.83) (xy 170.18 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7273817-e748-41db-a9fa-99fd39c9ab64")
 	)
 	(wire
 		(pts
@@ -7682,6 +8584,16 @@
 	)
 	(wire
 		(pts
+			(xy 72.39 168.91) (xy 72.39 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c06b8a40-6698-44ce-a9a4-734cb308e561")
+	)
+	(wire
+		(pts
 			(xy 154.94 34.29) (xy 143.51 34.29)
 		)
 		(stroke
@@ -7712,7 +8624,17 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 148.59) (xy 54.61 143.51)
+			(xy 87.63 170.18) (xy 87.63 173.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c88379d6-2359-4497-8207-ae011fde0f97")
+	)
+	(wire
+		(pts
+			(xy 43.18 157.48) (xy 43.18 152.4)
 		)
 		(stroke
 			(width 0)
@@ -7812,13 +8734,23 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 87.63) (xy 143.51 87.63)
+			(xy 81.28 185.42) (xy 81.28 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e027b788-d13a-4cfa-8d9d-4895c26fe69d")
+		(uuid "de8ce936-c497-43fc-b22d-710137cafb73")
+	)
+	(wire
+		(pts
+			(xy 77.47 162.56) (xy 87.63 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e03eabb8-a462-45e6-8fc4-fc796b5818b7")
 	)
 	(wire
 		(pts
@@ -7892,16 +8824,6 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 72.39) (xy 189.23 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f1b7706d-739f-46ac-aa37-a29243c1d9df")
-	)
-	(wire
-		(pts
 			(xy 82.55 62.23) (xy 82.55 64.77)
 		)
 		(stroke
@@ -7912,6 +8834,26 @@
 	)
 	(wire
 		(pts
+			(xy 179.07 54.61) (xy 186.69 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f643d454-9669-48c2-bdcc-25a9cb2fb338")
+	)
+	(wire
+		(pts
+			(xy 170.18 158.75) (xy 170.18 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f8580a2e-7b96-4758-966d-0eb3608198b7")
+	)
+	(wire
+		(pts
 			(xy 134.62 100.33) (xy 143.51 100.33)
 		)
 		(stroke
@@ -7919,6 +8861,16 @@
 			(type default)
 		)
 		(uuid "f93c4928-294b-466c-8f60-ebe8c5b3e44d")
+	)
+	(wire
+		(pts
+			(xy 179.07 115.57) (xy 189.23 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fac5d344-960d-47fa-94b3-25006b6dcc77")
 	)
 	(wire
 		(pts
@@ -7950,6 +8902,17 @@
 		)
 		(uuid "73279dc5-35d2-484a-99bf-cd6b3c866c91")
 	)
+	(label "LED_TEMP"
+		(at 134.62 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "015976a5-5088-4602-8e1c-28b4e5d0207d")
+	)
 	(label "TDI"
 		(at 182.88 92.71 0)
 		(fields_autoplaced yes)
@@ -7960,6 +8923,28 @@
 			(justify left bottom)
 		)
 		(uuid "02c5a05b-2937-4498-b7d3-71785d3ee90f")
+	)
+	(label "VBUS_SENSE"
+		(at 179.07 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0377a021-8ab3-478d-8b53-9c3c1a3d8ef3")
+	)
+	(label "CT-"
+		(at 104.14 106.68 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0fe389a1-52d4-4f14-810c-54973d4f1612")
 	)
 	(label "VCAP2"
 		(at 39.37 35.56 90)
@@ -7983,8 +8968,8 @@
 		)
 		(uuid "14fa8786-e49e-45fd-8363-6d63cdf5dfee")
 	)
-	(label "SCR"
-		(at 182.88 100.33 0)
+	(label "RGB_1"
+		(at 182.88 113.03 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -7992,7 +8977,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "1a75bf61-09df-4a68-9180-0d9073d1a7f2")
+		(uuid "161a75af-6e1d-48ae-a2aa-d66ef30c329e")
 	)
 	(label "TCK"
 		(at 182.88 90.17 0)
@@ -8049,6 +9034,17 @@
 		)
 		(uuid "37bd0cb8-0b90-465f-b475-9c9057d3822c")
 	)
+	(label "FAN_2"
+		(at 182.88 135.89 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "392f866c-d2d8-465e-ac10-c4a4b8f8a5d3")
+	)
 	(label "INT"
 		(at 130.81 77.47 0)
 		(fields_autoplaced yes)
@@ -8093,17 +9089,6 @@
 		)
 		(uuid "499af67e-e7ea-4067-bb3c-13c8b7938a41")
 	)
-	(label "I_L"
-		(at 130.81 87.63 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4fca2bec-dd8f-4502-8167-22a4edc5d66e")
-	)
 	(label "USART_RX"
 		(at 217.17 31.75 0)
 		(fields_autoplaced yes)
@@ -8115,6 +9100,17 @@
 		)
 		(uuid "530193e9-b966-4893-aedb-76506d5800f5")
 	)
+	(label "LED_IDRAW"
+		(at 134.62 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "59a9cd3b-ff4a-4b21-98ff-668b166b9c44")
+	)
 	(label "INT"
 		(at 166.37 30.48 0)
 		(fields_autoplaced yes)
@@ -8125,6 +9121,17 @@
 			(justify left bottom)
 		)
 		(uuid "5cde9896-67ed-463e-a59b-fa873259e0d9")
+	)
+	(label "PFC"
+		(at 180.34 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5f80b6f3-fac0-4d91-8b4d-2a2543ebb030")
 	)
 	(label "VBUS_SENSE"
 		(at 90.17 128.27 0)
@@ -8147,6 +9154,17 @@
 			(justify left bottom)
 		)
 		(uuid "62ec18ab-ae68-46b3-b901-e38a8d9b4785")
+	)
+	(label "THERM2"
+		(at 179.07 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "647cc345-7135-44cc-86f4-818bddc5e630")
 	)
 	(label "VAC_IN"
 		(at 62.23 130.81 0)
@@ -8181,6 +9199,17 @@
 		)
 		(uuid "69539482-b69d-44a2-97db-fa6ccb621f53")
 	)
+	(label "FAN_1"
+		(at 182.88 133.35 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "6a05b066-c719-4a6f-848d-6b654e34056d")
+	)
 	(label "TDO"
 		(at 182.88 105.41 0)
 		(fields_autoplaced yes)
@@ -8191,6 +9220,17 @@
 			(justify left bottom)
 		)
 		(uuid "7ff9e822-dc8f-4530-9d83-603884247434")
+	)
+	(label "CT-"
+		(at 83.82 190.5 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "82b082f9-2a00-4a4d-b2a5-7562388e1695")
 	)
 	(label "USART_TX"
 		(at 232.41 41.91 0)
@@ -8214,8 +9254,8 @@
 		)
 		(uuid "848eb51a-4fac-44ae-a7ff-290c013fa22e")
 	)
-	(label "VBUS_SENSE"
-		(at 180.34 72.39 0)
+	(label "THERM1"
+		(at 179.07 57.15 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8223,7 +9263,51 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "a3ad71b4-49d1-423a-8396-4cda323be3cf")
+		(uuid "87d2b4fa-7d76-4bb3-a3e7-f1c5bb9913da")
+	)
+	(label "I_L"
+		(at 180.34 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8f563706-9e53-44f9-86a2-893e8b99e91f")
+	)
+	(label "I_COMP"
+		(at 104.14 96.52 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "93440fb5-b238-41f3-9746-7b2ad080a0bc")
+	)
+	(label "RGB_3"
+		(at 182.88 118.11 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aec2d8e0-66fe-4e7c-b4a2-2a617aa377fd")
+	)
+	(label "I_PRI"
+		(at 101.6 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b73dc425-9972-4154-82d1-4093424e0515")
 	)
 	(label "TMS"
 		(at 102.87 25.4 0)
@@ -8247,6 +9331,17 @@
 		)
 		(uuid "b8e60b85-542c-4cf1-80de-6aaaaecced8b")
 	)
+	(label "I_COMP"
+		(at 130.81 82.55 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bba5ad20-6365-49a7-a6de-a6ad4882a152")
+	)
 	(label "VAC_TRIG"
 		(at 134.62 100.33 0)
 		(fields_autoplaced yes)
@@ -8268,6 +9363,17 @@
 			(justify left bottom)
 		)
 		(uuid "c7108837-44e9-4712-b144-c02aa056e5a6")
+	)
+	(label "RGB_2"
+		(at 182.88 115.57 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "c7441ac2-2ed0-419d-ab14-e907f627bbff")
 	)
 	(label "VAC_SENSE"
 		(at 17.78 93.98 0)
@@ -8291,17 +9397,6 @@
 		)
 		(uuid "c9eed64b-9ad8-4589-9e5f-1c9abfa35aa5")
 	)
-	(label "PFC"
-		(at 182.88 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cc019833-a6d2-463d-87a0-820fc0e6b154")
-	)
 	(label "BOOT1"
 		(at 29.21 35.56 90)
 		(fields_autoplaced yes)
@@ -8313,6 +9408,39 @@
 		)
 		(uuid "cd62fdfb-309e-4db3-b3d3-53847c5b9553")
 	)
+	(label "THERM3"
+		(at 179.07 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "cefc2822-60ca-45fd-9caf-72d8531c87f2")
+	)
+	(label "FAN_2"
+		(at 135.89 189.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d43bc937-9324-47fc-99c7-e99c520e7b5b")
+	)
+	(label "CT-"
+		(at 87.63 173.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d5cbfd2e-1518-465e-ad6a-196b2f4edc47")
+	)
 	(label "I_L"
 		(at 13.97 120.65 0)
 		(fields_autoplaced yes)
@@ -8323,6 +9451,28 @@
 			(justify left bottom)
 		)
 		(uuid "ddc6bd50-0b66-487f-b3bb-8b1cb7326210")
+	)
+	(label "SCR"
+		(at 182.88 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "df2672a4-154a-4690-9c66-93c010de5aab")
+	)
+	(label "FAN_1"
+		(at 135.89 166.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e1315340-9f33-4c37-8408-a0abf7e6c0b6")
 	)
 	(label "TCK"
 		(at 102.87 30.48 0)
@@ -8346,6 +9496,28 @@
 		)
 		(uuid "e1be87e1-2e76-4c27-a3f3-832540a2c31f")
 	)
+	(label "CT+"
+		(at 81.28 190.5 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e31f3e1c-2803-4e99-82e0-29dea37f043e")
+	)
+	(label "CT+"
+		(at 104.14 104.14 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed29b454-9d58-4b18-a193-8ec4f3af686b")
+	)
 	(label "RST"
 		(at 138.43 54.61 0)
 		(fields_autoplaced yes)
@@ -8357,6 +9529,17 @@
 		)
 		(uuid "f1129121-788b-4dc9-b50d-6c306b859545")
 	)
+	(label "I_PRI"
+		(at 130.81 85.09 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f730307e-42cc-418d-b31e-d57ecd97f02c")
+	)
 	(label "RST"
 		(at 102.87 45.72 0)
 		(fields_autoplaced yes)
@@ -8367,6 +9550,17 @@
 			(justify left bottom)
 		)
 		(uuid "f7a07b4a-5b50-4035-beda-172b2bb531b5")
+	)
+	(label "CT+"
+		(at 77.47 173.99 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f7f89189-25ac-4a20-a6c8-d159d2162f7e")
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
@@ -8657,7 +9851,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 142.24 180)
+		(at 48.26 151.13 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8666,7 +9860,7 @@
 		(fields_autoplaced yes)
 		(uuid "06180737-3176-4084-962d-d8bbe84404e2")
 		(property "Reference" "#PWR039"
-			(at 59.69 135.89 0)
+			(at 48.26 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8675,7 +9869,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 137.16 0)
+			(at 48.26 146.05 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8683,7 +9877,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 142.24 0)
+			(at 48.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8692,7 +9886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 142.24 0)
+			(at 48.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8701,7 +9895,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 142.24 0)
+			(at 48.26 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8722,8 +9916,75 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 101.6 170.18 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06961d29-9a5e-456a-b303-38f164da6d91")
+		(property "Reference" "#PWR032"
+			(at 107.95 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 105.41 170.1799 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 101.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 101.6 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "73fba67a-65b9-46d7-be7d-40f092caddef")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Converter_DCDC:TC7662Bx0A")
-		(at 43.18 163.83 0)
+		(at 31.75 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8732,7 +9993,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b45c413-1069-4510-a49c-5c7a341f6a99")
 		(property "Reference" "U7"
-			(at 45.3741 148.59 0)
+			(at 33.9441 157.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8741,7 +10002,7 @@
 			)
 		)
 		(property "Value" "TC7662Bx0A"
-			(at 45.3741 151.13 0)
+			(at 33.9441 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8750,7 +10011,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 45.72 166.37 0)
+			(at 34.29 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8759,7 +10020,7 @@
 			)
 		)
 		(property "Datasheet" "http://ww1.microchip.com/downloads/en/DeviceDoc/21469a.pdf"
-			(at 45.72 166.37 0)
+			(at 34.29 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8768,7 +10029,7 @@
 			)
 		)
 		(property "Description" "Charge Pump DC-to-DC Converter, 1.5 - 15V, 100mA, SOIC-8"
-			(at 43.18 163.83 0)
+			(at 31.75 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8950,7 +10211,7 @@
 	)
 	(symbol
 		(lib_id "power:-5V")
-		(at 59.69 156.21 180)
+		(at 48.26 165.1 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8959,7 +10220,7 @@
 		(fields_autoplaced yes)
 		(uuid "14b75340-ff27-4c58-abc9-d3d5bbc13c8c")
 		(property "Reference" "#PWR040"
-			(at 59.69 152.4 0)
+			(at 48.26 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8968,7 +10229,7 @@
 			)
 		)
 		(property "Value" "-5V"
-			(at 59.69 161.29 0)
+			(at 48.26 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8976,7 +10237,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 156.21 0)
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8985,7 +10246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 156.21 0)
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8994,7 +10255,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-5V\""
-			(at 59.69 156.21 0)
+			(at 48.26 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9150,7 +10411,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 54.61 152.4 0)
+		(at 43.18 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9159,7 +10420,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a9e1b21-18df-43f5-bc82-3dee358783d7")
 		(property "Reference" "C24"
-			(at 58.42 151.1299 0)
+			(at 46.99 160.0199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9168,7 +10429,7 @@
 			)
 		)
 		(property "Value" "1u 885012210031"
-			(at 58.42 153.6699 0)
+			(at 46.99 162.5599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9177,7 +10438,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 55.5752 156.21 0)
+			(at 44.1452 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9186,7 +10447,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 54.61 152.4 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9195,7 +10456,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 54.61 152.4 0)
+			(at 43.18 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9378,6 +10639,76 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 93.98 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2232b66d-c16e-4f8b-9c48-0f400126d119")
+		(property "Reference" "R14"
+			(at 96.52 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5R1 ERJ-B1BF5R1U"
+			(at 96.52 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_1020_2550Metric_Pad1.33x5.20mm_HandSolder"
+			(at 92.202 166.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 93.98 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 93.98 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c3c1813-78c1-406e-aab3-3e1d9ad96ffe")
+		)
+		(pin "2"
+			(uuid "26c1cccf-9c6e-4fc0-bcb2-be72217d87a6")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "R14")
 					(unit 1)
 				)
 			)
@@ -9747,7 +11078,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1N5819HW-7-F"
+		(property "Value" "MBR0530"
 			(at 106.68 133.3499 90)
 			(effects
 				(font
@@ -10342,7 +11673,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 53.34 166.37 0)
+		(at 41.91 175.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10351,7 +11682,7 @@
 		(fields_autoplaced yes)
 		(uuid "390f538b-a728-44ea-9eff-95003eabb733")
 		(property "Reference" "C22"
-			(at 57.15 165.0999 0)
+			(at 45.72 173.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10360,7 +11691,7 @@
 			)
 		)
 		(property "Value" "1u 885012210031"
-			(at 57.15 167.6399 0)
+			(at 45.72 176.5299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10369,7 +11700,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_1812_4532Metric_Pad1.57x3.40mm_HandSolder"
-			(at 54.3052 170.18 0)
+			(at 42.8752 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10378,7 +11709,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 53.34 166.37 0)
+			(at 41.91 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10387,7 +11718,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 53.34 166.37 0)
+			(at 41.91 175.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10472,72 +11803,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "C8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 199.39 74.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4400ba34-80f3-4ed8-8fbd-7eee17248e30")
-		(property "Reference" "#PWR032"
-			(at 199.39 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 199.39 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8ad48926-4967-4068-9f01-15f6d35918e2")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -10952,72 +12217,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 199.39 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "572e31b6-3d0b-42df-8ab1-68ba1accc926")
-		(property "Reference" "#PWR033"
-			(at 199.39 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 199.39 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 199.39 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 199.39 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 199.39 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ead110c7-ed1b-4ec8-91dc-64ca72331971")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDDA")
 		(at 168.91 49.53 0)
 		(unit 1)
@@ -11078,6 +12277,76 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 101.6 166.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f0f44f7-1f3a-417a-aa20-b5b92c637b46")
+		(property "Reference" "C25"
+			(at 105.41 165.0999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1n CGA3EAC0G2A102J080AA"
+			(at 105.41 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 102.5652 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 101.6 166.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa763f14-daae-46d5-8ab8-f2ec35bc562a")
+		)
+		(pin "2"
+			(uuid "18518e59-2985-4c45-b495-d5f1d512be79")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -11224,6 +12493,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 144.78 158.75 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "630fac86-a14d-41f1-a0ab-e32c7b24f7db")
+		(property "Reference" "#PWR033"
+			(at 144.78 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dc9d848-384f-440f-b970-9205f61878b0")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 102.87 27.94 270)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11284,6 +12619,214 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 72.39 172.72 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "69b683b2-bd4a-4f79-93f4-d9c887320534")
+		(property "Reference" "C26"
+			(at 76.2 171.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150p C1005C0G1H151G050BA"
+			(at 76.2 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 73.3552 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 72.39 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 72.39 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c53413f9-4c02-4866-9ead-ff935b0432c1")
+		)
+		(pin "2"
+			(uuid "3d626611-3d99-4881-9586-d4b0f5ffa8dd")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "C26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SI4056ADY-T1-GE3:SI4056ADY-T1-GE3")
+		(at 144.78 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6cea9516-360c-4340-b023-43ecee27c61d")
+		(property "Reference" "Q2"
+			(at 157.48 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SI4056ADY-T1-GE3"
+			(at 157.48 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:SOIC127P600X175-8N"
+			(at 166.37 253.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/78131/si4056ady.pdf"
+			(at 166.37 353.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MOSFET 100V N-CH D-S MOSFET"
+			(at 144.78 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.75"
+			(at 166.37 553.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "78-SI4056ADY-T1-GE3"
+			(at 166.37 653.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/SI4056ADY-T1-GE3?qs=zW32dvEIR3uc80Vvb9eHdA%3D%3D"
+			(at 166.37 753.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 166.37 853.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI4056ADY-T1-GE3"
+			(at 166.37 953.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1886125e-d941-485c-a680-5f221ab2be30")
+		)
+		(pin "6"
+			(uuid "aa7fd5f5-0c49-4e90-b583-d44d27314cf5")
+		)
+		(pin "5"
+			(uuid "fd4130cf-b9e2-4a13-9a4b-132b07355dbd")
+		)
+		(pin "7"
+			(uuid "f8ee87e3-7a61-4df4-92b2-9036325e34dd")
+		)
+		(pin "2"
+			(uuid "65d08297-0c3a-4daa-a15e-1d25a10771e8")
+		)
+		(pin "4"
+			(uuid "952dcfa9-8a07-4d01-aad8-62f0d689af22")
+		)
+		(pin "8"
+			(uuid "88f48d85-9720-431e-a084-563e1f34d15f")
+		)
+		(pin "3"
+			(uuid "a15794a9-00bf-462c-8b5f-c8aa33e51aa7")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -11545,6 +13088,159 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Diodes-Rectifiers-Single:1N5819HW-7-F")
+		(at 77.47 176.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "783ff91b-59c4-42fd-8d06-59a28b20be70")
+		(property "Reference" "D5"
+			(at 80.01 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MBR0530"
+			(at 80.01 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:SOD-123"
+			(at 82.55 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 85.09 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 87.63 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1N5819HW-7-F"
+			(at 90.17 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Discrete Semiconductor Products"
+			(at 92.71 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Diodes - Rectifiers - Single"
+			(at 95.25 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 97.79 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283"
+			(at 100.33 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 105.41 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 107.95 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "ac03bda5-d752-4983-86a8-225630d160dd")
+		)
+		(pin "K"
+			(uuid "4d20b329-85c8-4b9b-8c78-27e7a42860fd")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -11989,16 +13685,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 199.39 63.5 180)
+		(lib_id "dk_Diodes-Rectifiers-Single:1N5819HW-7-F")
+		(at 77.47 165.1 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "906d660e-0cb6-427b-bdc5-a73b6da0d074")
-		(property "Reference" "R13"
-			(at 196.85 64.7701 0)
+		(fields_autoplaced yes)
+		(uuid "8803f567-8758-4613-a17f-ec7015fc43c9")
+		(property "Reference" "D3"
+			(at 80.01 165.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12006,8 +13703,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "1k MCU0805MD1051BP500"
-			(at 205.994 58.42 90)
+		(property "Value" "MBR0530"
+			(at 80.01 167.6399 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12015,43 +13712,279 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 201.168 63.5 90)
+		(property "Footprint" "digikey-footprints:SOD-123"
+			(at 82.55 170.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 199.39 63.5 0)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 85.09 170.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 199.39 63.5 0)
+		(property "Description" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 87.63 170.18 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.524 1.524)
 				)
+				(justify left)
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "eaf5eeef-ba00-4f54-9a90-ebf11941a9ad")
+		(property "MPN" "1N5819HW-7-F"
+			(at 90.17 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
 		)
-		(pin "2"
-			(uuid "afe90643-d54c-4dfa-bcf1-fb029c1f6fd0")
+		(property "Category" "Discrete Semiconductor Products"
+			(at 92.71 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Diodes - Rectifiers - Single"
+			(at 95.25 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 97.79 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283"
+			(at 100.33 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 102.87 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 105.41 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 107.95 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "545bab39-8cfa-4f56-9add-27c026aba4f0")
+		)
+		(pin "K"
+			(uuid "c876a449-5774-4227-badc-4870c5be1325")
 		)
 		(instances
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "R13")
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Diodes-Rectifiers-Single:1N5819HW-7-F")
+		(at 87.63 176.53 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8dbf28cb-349d-41b2-978c-c0366adea454")
+		(property "Reference" "D6"
+			(at 90.17 176.5299 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MBR0530"
+			(at 90.17 179.0699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:SOD-123"
+			(at 92.71 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 95.25 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 97.79 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1N5819HW-7-F"
+			(at 100.33 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Discrete Semiconductor Products"
+			(at 102.87 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Diodes - Rectifiers - Single"
+			(at 105.41 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 107.95 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283"
+			(at 110.49 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 113.03 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 115.57 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 118.11 181.61 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "e63d8aef-a0c6-45a3-8ab2-64dd26639555")
+		)
+		(pin "K"
+			(uuid "7a8d2ce9-3a18-4d2a-8437-f2827771b784")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -12195,7 +14128,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 43.18 151.13 0)
+		(at 31.75 160.02 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12204,7 +14137,7 @@
 		(fields_autoplaced yes)
 		(uuid "95c6b12c-12e1-4ac2-bdfe-e4b25483928f")
 		(property "Reference" "#PWR037"
-			(at 43.18 154.94 0)
+			(at 31.75 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12213,7 +14146,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 43.18 146.05 0)
+			(at 31.75 154.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12221,7 +14154,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 151.13 0)
+			(at 31.75 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12230,7 +14163,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 151.13 0)
+			(at 31.75 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12239,7 +14172,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 43.18 151.13 0)
+			(at 31.75 160.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12873,7 +14806,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 43.18 176.53 0)
+		(at 31.75 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12882,7 +14815,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2b969bd-77dd-4cd6-bc4e-eed1eee6ce33")
 		(property "Reference" "#PWR038"
-			(at 43.18 182.88 0)
+			(at 31.75 191.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12891,7 +14824,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 43.18 181.61 0)
+			(at 31.75 190.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12899,7 +14832,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 176.53 0)
+			(at 31.75 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12908,7 +14841,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 176.53 0)
+			(at 31.75 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12917,7 +14850,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 43.18 176.53 0)
+			(at 31.75 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13009,7 +14942,7 @@
 	)
 	(symbol
 		(lib_id "New_Library:860020474014")
-		(at 59.69 143.51 270)
+		(at 48.26 152.4 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13018,7 +14951,7 @@
 		(fields_autoplaced yes)
 		(uuid "ac52776d-5a91-4858-b351-9b8be8947eeb")
 		(property "Reference" "C23"
-			(at 63.5 148.5899 90)
+			(at 52.07 157.4799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13027,7 +14960,7 @@
 			)
 		)
 		(property "Value" "860020474014"
-			(at 63.5 151.1299 90)
+			(at 52.07 160.0199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13036,7 +14969,7 @@
 			)
 		)
 		(property "Footprint" "Library:CAPPRD350W52D800H1300"
-			(at -36.5 152.4 0)
+			(at -47.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13046,7 +14979,7 @@
 			)
 		)
 		(property "Datasheet" "https://componentsearchengine.com/Datasheets/2/860020474014.pdf"
-			(at -136.5 152.4 0)
+			(at -147.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13056,7 +14989,7 @@
 			)
 		)
 		(property "Description" "Wurth Elektronik 470uF 25 V dc Aluminium Electrolytic Capacitor, WCAP-ATG5 Series 2000h 8 (Dia.) x 11.5mm"
-			(at 59.69 143.51 0)
+			(at 48.26 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13065,7 +14998,7 @@
 			)
 		)
 		(property "Height" "13"
-			(at -336.5 152.4 0)
+			(at -347.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13075,7 +15008,7 @@
 			)
 		)
 		(property "Mouser Part Number" "710-860020474014"
-			(at -436.5 152.4 0)
+			(at -447.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13085,7 +15018,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/860020474014?qs=0KOYDY2FL2%252BfCDf5E%252Bq6Tw%3D%3D"
-			(at -536.5 152.4 0)
+			(at -547.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13095,7 +15028,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Wurth Elektronik"
-			(at -636.5 152.4 0)
+			(at -647.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13105,7 +15038,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "860020474014"
-			(at -736.5 152.4 0)
+			(at -747.93 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13965,75 +15898,6 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 199.39 71.12 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "cae088a6-aed1-4fa3-93a1-41c15e059ad7")
-		(property "Reference" "R14"
-			(at 196.85 72.3901 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1k MCU0805MD1051BP500"
-			(at 203.2 57.404 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 201.168 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 199.39 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 199.39 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "db4075e5-56fc-4c61-8421-cbe2ecad40ff")
-		)
-		(pin "2"
-			(uuid "adb8fe7c-f351-4e5a-8741-9b577d9c8b44")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "R14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
 		(at 29.21 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -14238,6 +16102,159 @@
 		)
 	)
 	(symbol
+		(lib_id "dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021")
+		(at 81.28 193.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cd6643a4-9a53-4ff8-bdc5-b1e8cf5901c4")
+		(property "Reference" "J3"
+			(at 86.36 193.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22-23-2021"
+			(at 86.36 195.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:PinHeader_1x2_P2.54mm_Drill1.02mm"
+			(at 86.36 187.96 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf"
+			(at 86.36 185.42 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "CONN HEADER VERT 2POS 2.54MM"
+			(at 86.36 182.88 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "22-23-2021"
+			(at 86.36 180.34 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Connectors, Interconnects"
+			(at 86.36 177.8 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Rectangular Connectors - Headers, Male Pins"
+			(at 86.36 175.26 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://media.digikey.com/pdf/Data%20Sheets/Molex%20PDFs/A-6373-N_Series_Dwg_2010-12-03.pdf"
+			(at 86.36 172.72 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/molex/22-23-2021/WM4200-ND/26667"
+			(at 86.36 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "CONN HEADER VERT 2POS 2.54MM"
+			(at 86.36 167.64 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 86.36 165.1 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 86.36 162.56 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6b807501-9351-4987-9002-e5dc67d93b33")
+		)
+		(pin "2"
+			(uuid "08dd2f9d-2713-49c2-8944-0c65d8b84969")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 161.29 143.51 0)
 		(unit 1)
@@ -14374,6 +16391,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 144.78 181.61 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4cd9c55-f58c-42c8-9582-51d82fc60889")
+		(property "Reference" "#PWR041"
+			(at 144.78 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bba04ae2-26d5-4d0d-a857-a2a9b4713389")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "#PWR041")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+24V")
 		(at 62.23 120.65 270)
 		(unit 1)
@@ -14435,6 +16518,159 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "dk_Diodes-Rectifiers-Single:1N5819HW-7-F")
+		(at 87.63 165.1 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8db14da-b801-4f04-b6c1-7c00ba832d58")
+		(property "Reference" "D4"
+			(at 90.17 165.0999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MBR0530"
+			(at 90.17 167.6399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "digikey-footprints:SOD-123"
+			(at 92.71 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 95.25 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 97.79 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "MPN" "1N5819HW-7-F"
+			(at 100.33 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Category" "Discrete Semiconductor Products"
+			(at 102.87 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Family" "Diodes - Rectifiers - Single"
+			(at 105.41 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
+			(at 107.95 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283"
+			(at 110.49 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "DIODE SCHOTTKY 40V 1A SOD123"
+			(at 113.03 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Diodes Incorporated"
+			(at 115.57 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Status" "Active"
+			(at 118.11 170.18 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "A"
+			(uuid "85754ffd-051b-439f-a682-41c6d0568a96")
+		)
+		(pin "K"
+			(uuid "2484dc01-8827-4e4a-9ef0-9d3c8fc56da4")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -14983,7 +17219,7 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 33.02 156.21 90)
+		(at 21.59 165.1 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -14992,7 +17228,7 @@
 		(fields_autoplaced yes)
 		(uuid "f128a2e1-75b0-4a01-a1c1-feb68fbfc7da")
 		(property "Reference" "#PWR036"
-			(at 36.83 156.21 0)
+			(at 25.4 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15001,7 +17237,7 @@
 			)
 		)
 		(property "Value" "+5V"
-			(at 29.21 156.2099 90)
+			(at 17.78 165.0999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15010,7 +17246,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 156.21 0)
+			(at 21.59 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15019,7 +17255,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 156.21 0)
+			(at 21.59 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15028,7 +17264,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 33.02 156.21 0)
+			(at 21.59 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15043,6 +17279,144 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR036")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SI4056ADY-T1-GE3:SI4056ADY-T1-GE3")
+		(at 144.78 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f188f8f8-f567-4dbe-8f46-6075a928103e")
+		(property "Reference" "Q3"
+			(at 157.48 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SI4056ADY-T1-GE3"
+			(at 157.48 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:SOIC127P600X175-8N"
+			(at 166.37 276.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/78131/si4056ady.pdf"
+			(at 166.37 376.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MOSFET 100V N-CH D-S MOSFET"
+			(at 144.78 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.75"
+			(at 166.37 576.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "78-SI4056ADY-T1-GE3"
+			(at 166.37 676.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/SI4056ADY-T1-GE3?qs=zW32dvEIR3uc80Vvb9eHdA%3D%3D"
+			(at 166.37 776.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Vishay"
+			(at 166.37 876.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SI4056ADY-T1-GE3"
+			(at 166.37 976.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ef6c5400-3bb9-4035-adf5-eaf4b77e6435")
+		)
+		(pin "6"
+			(uuid "cfee47f9-8749-44bb-895b-e50f8a5c914a")
+		)
+		(pin "5"
+			(uuid "042159c9-1180-48cc-a42c-161f2bd4be60")
+		)
+		(pin "7"
+			(uuid "9e3e3496-5f50-4d51-a528-d6b90d521e04")
+		)
+		(pin "2"
+			(uuid "6ef33172-0dce-4d1d-a9bf-794bac3296d0")
+		)
+		(pin "4"
+			(uuid "85b9afc9-83b9-4e95-b93a-f6d3d6f754d7")
+		)
+		(pin "8"
+			(uuid "de1d94e3-1530-442a-98bf-6bdd2d809833")
+		)
+		(pin "3"
+			(uuid "05519f7c-9ffc-437e-85a9-be4a51db802f")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "Q3")
 					(unit 1)
 				)
 			)
@@ -15074,7 +17448,7 @@
 				)
 			)
 		)
-		(property "Footprint" "21-0041B_14"
+		(property "Footprint" "Library:21-0041B_14-L"
 			(at 29.21 91.44 0)
 			(effects
 				(font
@@ -15149,6 +17523,75 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 97.79 162.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4b9697b-2346-4d73-88f5-c6bb0d7df0fd")
+		(property "Reference" "R13"
+			(at 96.5199 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1k MCU0805MD1051BP500"
+			(at 98.298 160.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 97.79 164.338 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 97.79 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a6bb638b-ab2e-47f7-99fa-754a92752326")
+		)
+		(pin "2"
+			(uuid "1a3055f2-1134-4ccb-8ca7-8d5a7dace10a")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "R13")
 					(unit 1)
 				)
 			)

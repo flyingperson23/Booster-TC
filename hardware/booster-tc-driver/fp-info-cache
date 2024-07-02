@@ -1,4 +1,4 @@
-24020021920885958
+24021741868036716
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63489,6 +63489,13 @@ Library
 0
 12
 4
+Library
+21-0041B_14-L
+
+MAX9202ESD+ 
+0
+14
+14
 Library
 3544-Spade
 
