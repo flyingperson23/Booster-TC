@@ -77,14 +77,12 @@ void Error_Handler(void);
 #define THERM3_GPIO_Port GPIOA
 #define I_L_Pin GPIO_PIN_5
 #define I_L_GPIO_Port GPIOA
-#define VAC_Pin GPIO_PIN_6
-#define VAC_GPIO_Port GPIOA
-#define SCR_OUT_Pin GPIO_PIN_0
-#define SCR_OUT_GPIO_Port GPIOB
-#define FAN_1_Pin GPIO_PIN_14
-#define FAN_1_GPIO_Port GPIOB
-#define FAN_2_Pin GPIO_PIN_15
-#define FAN_2_GPIO_Port GPIOB
+#define VAC_Pin GPIO_PIN_4
+#define VAC_GPIO_Port GPIOC
+#define FAN_EN_Pin GPIO_PIN_2
+#define FAN_EN_GPIO_Port GPIOB
+#define SPI_CS_Pin GPIO_PIN_11
+#define SPI_CS_GPIO_Port GPIOB
 #define LED_IDRAW_Pin GPIO_PIN_6
 #define LED_IDRAW_GPIO_Port GPIOC
 #define LED_TEMP_Pin GPIO_PIN_8
@@ -92,14 +90,8 @@ void Error_Handler(void);
 #define VAC_TRIG_Pin GPIO_PIN_9
 #define VAC_TRIG_GPIO_Port GPIOC
 #define VAC_TRIG_EXTI_IRQn EXTI9_5_IRQn
-#define PFC_PWM_Pin GPIO_PIN_8
-#define PFC_PWM_GPIO_Port GPIOA
-#define RGB_1_Pin GPIO_PIN_6
-#define RGB_1_GPIO_Port GPIOB
-#define RGB_2_Pin GPIO_PIN_7
-#define RGB_2_GPIO_Port GPIOB
-#define RGB_3_Pin GPIO_PIN_8
-#define RGB_3_GPIO_Port GPIOB
+#define PFC_PWM_Pin GPIO_PIN_6
+#define PFC_PWM_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

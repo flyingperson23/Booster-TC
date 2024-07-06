@@ -42,6 +42,7 @@ int8_t getIndex(char* name);
 #define MAX_AC_I 1
 #define MAX_OUT_V 2
 #define MAX_TEMP 3
+#define PHASE_LEAD 4
 
 
 #endif /* INC_VARS_H_ */

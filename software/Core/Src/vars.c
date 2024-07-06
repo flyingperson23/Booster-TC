@@ -15,6 +15,7 @@ void addVars() {
 	addVar("max_ac_i", 15, 'A', MAX_AC_I, 0, 1000);
 	addVar("max_out_v", 400, 'V', MAX_OUT_V, 0, 400);
 	addVar("max_temp", 60, 'C', MAX_TEMP, 0, 200);
+	addVar("phase_lead", 0, 'clk', PHASE_LEAD, 0, 0xFFFFFFFF);
 }
 
 void addVar(char * name, uint32_t default_value, char suffix, uint8_t index, int16_t min, int16_t max) {
