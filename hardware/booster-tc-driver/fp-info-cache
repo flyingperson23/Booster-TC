@@ -1,4 +1,4 @@
-24021741868036716
+24045833068638353
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -63483,6 +63483,13 @@ Yellow 5381 Series LED
 2
 2
 Library
+7443551221
+WE-HCI_1350/136523
+Inductor
+0
+2
+2
+Library
 7448063801
 
 
@@ -63518,6 +63525,20 @@ Connector
 6
 6
 Library
+36471662
+3-647166-2-3
+Connector
+0
+2
+2
+Library
+860020575013
+
+860020575013 
+0
+2
+2
+Library
 890324026027
 
 
@@ -63538,6 +63559,13 @@ Capacitor
 0
 2
 2
+Library
+B12JV
+
+
+0
+5
+3
 Library
 B32672P4105K000
 B32672P_(18_x_6)
@@ -63560,8 +63588,22 @@ Varistor
 2
 2
 Library
+BD50FD0WHFPTR
+BD50FD0WHFP-TR-2
+Integrated Circuit
+0
+6
+6
+Library
 CAPPRD350W52D800H1300
 WCAP-ATG5
+Capacitor Polarised
+0
+2
+2
+Library
+CAPPRD350W62D800H900
+870025574001
 Capacitor Polarised
 0
 2
@@ -63574,12 +63616,33 @@ Capacitor Polarised
 2
 2
 Library
+CAT4109V-GT2
+SOIC-16, CASE 751BG-01 - ISSUE O
+Integrated Circuit
+0
+16
+16
+Library
 CONN_62201021121_WRE
 
 62201021121 
 0
 10
 10
+Library
+CONN_B4B-PH-SM4-TB_JST
+
+B4B-PH-SM4-TB 
+0
+6
+4
+Library
+CSTNE16M0V530000R0
+CSTNE16M0V530000R0
+Undefined or Miscellaneous
+0
+3
+3
 Library
 CW01020K00JE73
 
@@ -63615,6 +63678,20 @@ IND_B82727E6503A040
 0
 8
 8
+Library
+L4940D2T12-TR
+D2PAK_STD_ST
+Integrated Circuit
+0
+3
+3
+Library
+LED_5700100132F
+
+
+0
+6
+6
 Library
 MAX9202
 
@@ -63686,6 +63763,13 @@ SAMTEC_EHT-105-01-S-D
 10
 10
 Library
+SI4564DY-T1-GE3
+SOIC (NARROW): 8-LEAD_2021
+Integrated Circuit
+0
+8
+8
+Library
 SOIC127P600X175-8N
 S8+2
 Integrated Circuit
@@ -63700,12 +63784,26 @@ Transformer
 6
 6
 Library
+SOT65P280X145-8N
+RJ-8 (SOT23)_1
+Integrated Circuit
+0
+8
+8
+Library
 SOT96P237X111-3N
 SOT-23 (TO-236) CASE 318-08
 Transistor
 0
 3
 3
+Library
+TO252_4L_AOS
+
+AOD609 
+0
+5
+5
 Library
 WE-TORPFC_T37_D53H28
 Power Factor Correction Inductor, THT, OD 53mm

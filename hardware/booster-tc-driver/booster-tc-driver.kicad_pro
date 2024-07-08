@@ -51,8 +51,29 @@
           "min_clearance": 0.5
         }
       },
-      "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
+      "drc_exclusions": [
+        "clearance|62230000|67365000|dafe8d65-116c-4641-8b58-e4a0fb3c7493|26a9e8e0-dee6-475c-932a-b9715e1f54f3",
+        "clearance|62230000|69905000|5fbd65b2-9a50-47fa-8409-3c8ee03a1736|3e69228d-dc6e-4662-9116-12d9a5dd49a0",
+        "clearance|62230000|71175000|3e69228d-dc6e-4662-9116-12d9a5dd49a0|f016cd30-1ed6-48d6-b3af-5d1757f37c38",
+        "clearance|62865000|66730000|dafe8d65-116c-4641-8b58-e4a0fb3c7493|109d45ef-1bd2-42a9-ad7d-5255d1a615eb",
+        "clearance|62865000|68000000|26a9e8e0-dee6-475c-932a-b9715e1f54f3|f303c0c5-d8d1-44f3-82c7-8c09cb55c5be",
+        "clearance|62865000|69270000|5fbd65b2-9a50-47fa-8409-3c8ee03a1736|33974038-336b-48d9-ae33-99a2b8b02f2a",
+        "clearance|62865000|70540000|3e69228d-dc6e-4662-9116-12d9a5dd49a0|f7916154-564f-4978-847c-47b166dcb197",
+        "clearance|62865000|71810000|f016cd30-1ed6-48d6-b3af-5d1757f37c38|8bb14781-a076-4d29-88a1-a09d64e6fa9a",
+        "clearance|63500000|67365000|109d45ef-1bd2-42a9-ad7d-5255d1a615eb|f303c0c5-d8d1-44f3-82c7-8c09cb55c5be",
+        "clearance|63500000|68635000|f303c0c5-d8d1-44f3-82c7-8c09cb55c5be|33974038-336b-48d9-ae33-99a2b8b02f2a",
+        "clearance|63500000|69905000|33974038-336b-48d9-ae33-99a2b8b02f2a|f7916154-564f-4978-847c-47b166dcb197",
+        "clearance|63500000|71175000|f7916154-564f-4978-847c-47b166dcb197|8bb14781-a076-4d29-88a1-a09d64e6fa9a",
+        "malformed_courtyard|42000000|24750000|c36d7843-c5fd-44f4-bb9b-f208f4818844|00000000-0000-0000-0000-000000000000",
+        "malformed_courtyard|42500000|25250000|c36d7843-c5fd-44f4-bb9b-f208f4818844|00000000-0000-0000-0000-000000000000"
+      ],
       "meta": {
         "version": 2
       },
@@ -111,7 +132,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.5,
+        "min_copper_edge_clearance": 0.0,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -170,7 +191,12 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0,
+        0.2,
+        0.5,
+        1.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -197,7 +223,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -415,7 +446,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
@@ -576,6 +607,10 @@
     [
       "3c175d5e-f31a-4933-a865-8318878a5034",
       "Root"
+    ],
+    [
+      "5883c817-5fe2-4da4-86ec-369c65f73713",
+      "Gate Drive Out"
     ]
   ],
   "text_variables": {}
