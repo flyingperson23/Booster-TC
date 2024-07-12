@@ -1,0 +1,7 @@
+../Core/Src/boost_compensators.c:19:6:constrain	24	static
+../Core/Src/boost_compensators.c:24:7:Run2p2zFilter	16	static
+../Core/Src/boost_compensators.c:36:6:Init2p2zFilter	32	static
+../Core/Src/boost_compensators.c:44:6:Reset2p2zFilter	16	static
+../Core/Src/boost_compensators.c:53:6:BoostInit	8	static
+../Core/Src/boost_compensators.c:64:6:BoostSlowLoop	16	static
+../Core/Src/boost_compensators.c:77:6:BoostFastLoop	16	static

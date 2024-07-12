@@ -1,0 +1,3 @@
+../Core/Src/booster_tc.c:16:6:booster_init	8	static
+../Core/Src/booster_tc.c:24:6:booster_loop	4	static
+../Core/Src/booster_tc.c:29:6:background_loop	4	static

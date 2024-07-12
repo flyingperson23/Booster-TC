@@ -1,8 +1,9 @@
-../Core/Src/vars.c:13:6:addVars	16	static
-../Core/Src/vars.c:20:6:addVar	32	static
-../Core/Src/vars.c:31:7:getVar	16	static
-../Core/Src/vars.c:35:8:getIndex	24	static
-../Core/Src/vars.c:44:9:fillVars	16	static
-../Core/Src/vars.c:75:6:writeVars	16	static
-../Core/Src/vars.c:84:6:Flash_Read_Data	24	static
-../Core/Src/vars.c:93:6:Flash_Write_Data	32	static
+../Core/Src/vars.c:19:6:AddVars	32	static
+../Core/Src/vars.c:26:6:AddVar	32	static
+../Core/Src/vars.c:37:7:GetVar	16	static
+../Core/Src/vars.c:41:9:GetValue	16	static
+../Core/Src/vars.c:45:8:GetIndex	24	static
+../Core/Src/vars.c:54:6:FillVars	16	static
+../Core/Src/vars.c:61:6:WriteVars	16	static
+../Core/Src/vars.c:68:6:Flash_Read_Data	24	static
+../Core/Src/vars.c:81:6:Flash_Write_Data	32	static

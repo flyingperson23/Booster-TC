@@ -106,7 +106,6 @@ TERMINAL_HANDLE * TERM_createNewHandle(TermPrintHandler printFunction, unsigned 
         ACL_add(head, "-r");
         ACL_add(head, "-aa");
         TERM_addCommandAC(test, ACL_defaultCompleter, head);  
-        cmds_init();
     }
     
 #ifdef TERM_ENABLE_STARTUP_TEXT

@@ -7,54 +7,60 @@
 C_SRCS += \
 ../Core/Src/TTerm.c \
 ../Core/Src/TTerm_AC.c \
-../Core/Src/TTerm_Interface.c \
 ../Core/Src/TTerm_cmd.c \
+../Core/Src/boost_compensators.c \
+../Core/Src/booster_tc.c \
 ../Core/Src/cmds.c \
 ../Core/Src/main.c \
-../Core/Src/stm32f4xx_hal_msp.c \
-../Core/Src/stm32f4xx_it.c \
+../Core/Src/stm32g4xx_hal_msp.c \
+../Core/Src/stm32g4xx_it.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
-../Core/Src/system_stm32f4xx.c \
+../Core/Src/system_stm32g4xx.c \
+../Core/Src/uart.c \
 ../Core/Src/vars.c 
 
 OBJS += \
 ./Core/Src/TTerm.o \
 ./Core/Src/TTerm_AC.o \
-./Core/Src/TTerm_Interface.o \
 ./Core/Src/TTerm_cmd.o \
+./Core/Src/boost_compensators.o \
+./Core/Src/booster_tc.o \
 ./Core/Src/cmds.o \
 ./Core/Src/main.o \
-./Core/Src/stm32f4xx_hal_msp.o \
-./Core/Src/stm32f4xx_it.o \
+./Core/Src/stm32g4xx_hal_msp.o \
+./Core/Src/stm32g4xx_it.o \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
-./Core/Src/system_stm32f4xx.o \
+./Core/Src/system_stm32g4xx.o \
+./Core/Src/uart.o \
 ./Core/Src/vars.o 
 
 C_DEPS += \
 ./Core/Src/TTerm.d \
 ./Core/Src/TTerm_AC.d \
-./Core/Src/TTerm_Interface.d \
 ./Core/Src/TTerm_cmd.d \
+./Core/Src/boost_compensators.d \
+./Core/Src/booster_tc.d \
 ./Core/Src/cmds.d \
 ./Core/Src/main.d \
-./Core/Src/stm32f4xx_hal_msp.d \
-./Core/Src/stm32f4xx_it.d \
+./Core/Src/stm32g4xx_hal_msp.d \
+./Core/Src/stm32g4xx_it.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
-./Core/Src/system_stm32f4xx.d \
+./Core/Src/system_stm32g4xx.d \
+./Core/Src/uart.d \
 ./Core/Src/vars.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes
 Core/Src/%.o Core/Src/%.su Core/Src/%.cyclo: ../Core/Src/%.c Core/Src/subdir.mk
-	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F405xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
+	arm-none-eabi-gcc "$<" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32G474xx -c -I../Core/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc -I../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"$(@:%.o=%.d)" -MT"$@" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "$@"
 
 clean: clean-Core-2f-Src
 
 clean-Core-2f-Src:
-	-$(RM) ./Core/Src/TTerm.cyclo ./Core/Src/TTerm.d ./Core/Src/TTerm.o ./Core/Src/TTerm.su ./Core/Src/TTerm_AC.cyclo ./Core/Src/TTerm_AC.d ./Core/Src/TTerm_AC.o ./Core/Src/TTerm_AC.su ./Core/Src/TTerm_Interface.cyclo ./Core/Src/TTerm_Interface.d ./Core/Src/TTerm_Interface.o ./Core/Src/TTerm_Interface.su ./Core/Src/TTerm_cmd.cyclo ./Core/Src/TTerm_cmd.d ./Core/Src/TTerm_cmd.o ./Core/Src/TTerm_cmd.su ./Core/Src/cmds.cyclo ./Core/Src/cmds.d ./Core/Src/cmds.o ./Core/Src/cmds.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32f4xx_hal_msp.cyclo ./Core/Src/stm32f4xx_hal_msp.d ./Core/Src/stm32f4xx_hal_msp.o ./Core/Src/stm32f4xx_hal_msp.su ./Core/Src/stm32f4xx_it.cyclo ./Core/Src/stm32f4xx_it.d ./Core/Src/stm32f4xx_it.o ./Core/Src/stm32f4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32f4xx.cyclo ./Core/Src/system_stm32f4xx.d ./Core/Src/system_stm32f4xx.o ./Core/Src/system_stm32f4xx.su ./Core/Src/vars.cyclo ./Core/Src/vars.d ./Core/Src/vars.o ./Core/Src/vars.su
+	-$(RM) ./Core/Src/TTerm.cyclo ./Core/Src/TTerm.d ./Core/Src/TTerm.o ./Core/Src/TTerm.su ./Core/Src/TTerm_AC.cyclo ./Core/Src/TTerm_AC.d ./Core/Src/TTerm_AC.o ./Core/Src/TTerm_AC.su ./Core/Src/TTerm_cmd.cyclo ./Core/Src/TTerm_cmd.d ./Core/Src/TTerm_cmd.o ./Core/Src/TTerm_cmd.su ./Core/Src/boost_compensators.cyclo ./Core/Src/boost_compensators.d ./Core/Src/boost_compensators.o ./Core/Src/boost_compensators.su ./Core/Src/booster_tc.cyclo ./Core/Src/booster_tc.d ./Core/Src/booster_tc.o ./Core/Src/booster_tc.su ./Core/Src/cmds.cyclo ./Core/Src/cmds.d ./Core/Src/cmds.o ./Core/Src/cmds.su ./Core/Src/main.cyclo ./Core/Src/main.d ./Core/Src/main.o ./Core/Src/main.su ./Core/Src/stm32g4xx_hal_msp.cyclo ./Core/Src/stm32g4xx_hal_msp.d ./Core/Src/stm32g4xx_hal_msp.o ./Core/Src/stm32g4xx_hal_msp.su ./Core/Src/stm32g4xx_it.cyclo ./Core/Src/stm32g4xx_it.d ./Core/Src/stm32g4xx_it.o ./Core/Src/stm32g4xx_it.su ./Core/Src/syscalls.cyclo ./Core/Src/syscalls.d ./Core/Src/syscalls.o ./Core/Src/syscalls.su ./Core/Src/sysmem.cyclo ./Core/Src/sysmem.d ./Core/Src/sysmem.o ./Core/Src/sysmem.su ./Core/Src/system_stm32g4xx.cyclo ./Core/Src/system_stm32g4xx.d ./Core/Src/system_stm32g4xx.o ./Core/Src/system_stm32g4xx.su ./Core/Src/uart.cyclo ./Core/Src/uart.d ./Core/Src/uart.o ./Core/Src/uart.su ./Core/Src/vars.cyclo ./Core/Src/vars.d ./Core/Src/vars.o ./Core/Src/vars.su
 
 .PHONY: clean-Core-2f-Src
 

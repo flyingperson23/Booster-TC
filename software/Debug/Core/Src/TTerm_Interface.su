@@ -1,3 +1,0 @@
-../Core/Src/TTerm_Interface.c:13:6:TTerm_Interface_Init	24	static
-../Core/Src/TTerm_Interface.c:19:6:HAL_UART_RxCpltCallback	16	static
-../Core/Src/TTerm_Interface.c:24:6:printer	24	static

@@ -1,5 +1,3 @@
-../Core/Src/cmds.c:13:7:getSaveStatus	6
-../Core/Src/cmds.c:22:6:inc	1
-../Core/Src/cmds.c:25:9:CMD_get	6
-../Core/Src/cmds.c:48:9:CMD_set	8
-../Core/Src/cmds.c:80:6:cmds_init	1
+../Core/Src/cmds.c:13:9:CMD_get	5
+../Core/Src/cmds.c:32:9:CMD_set	8
+../Core/Src/cmds.c:64:6:CmdsInit	1
