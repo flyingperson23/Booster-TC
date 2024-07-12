@@ -59,6 +59,7 @@ extern COMP_HandleTypeDef hcomp1;
 extern COMP_HandleTypeDef hcomp2;
 extern COMP_HandleTypeDef hcomp3;
 extern COMP_HandleTypeDef hcomp6;
+extern FMAC_HandleTypeDef hfmac;
 extern TIM_HandleTypeDef htim4;
 extern UART_HandleTypeDef huart3;
 /* USER CODE BEGIN EV */
@@ -259,6 +260,20 @@ void COMP4_5_6_IRQHandler(void)
   /* USER CODE BEGIN COMP4_5_6_IRQn 1 */
 
   /* USER CODE END COMP4_5_6_IRQn 1 */
+}
+
+/**
+  * @brief This function handles FMAC interrupt.
+  */
+void FMAC_IRQHandler(void)
+{
+  /* USER CODE BEGIN FMAC_IRQn 0 */
+
+  /* USER CODE END FMAC_IRQn 0 */
+  HAL_FMAC_IRQHandler(&hfmac);
+  /* USER CODE BEGIN FMAC_IRQn 1 */
+
+  /* USER CODE END FMAC_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */

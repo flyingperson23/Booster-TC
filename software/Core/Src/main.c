@@ -54,6 +54,8 @@ COMP_HandleTypeDef hcomp7;
 DAC_HandleTypeDef hdac2;
 DAC_HandleTypeDef hdac3;
 
+FMAC_HandleTypeDef hfmac;
+
 HRTIM_HandleTypeDef hhrtim1;
 
 SPI_HandleTypeDef hspi2;
@@ -94,6 +96,7 @@ static void MX_USART3_UART_Init(void);
 static void MX_COMP7_Init(void);
 static void MX_DAC2_Init(void);
 static void MX_TIM17_Init(void);
+static void MX_FMAC_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -151,6 +154,7 @@ int main(void)
   MX_COMP7_Init();
   MX_DAC2_Init();
   MX_TIM17_Init();
+  MX_FMAC_Init();
   /* USER CODE BEGIN 2 */
   booster_init();
   /* USER CODE END 2 */
@@ -726,6 +730,32 @@ static void MX_DAC3_Init(void)
   /* USER CODE BEGIN DAC3_Init 2 */
 
   /* USER CODE END DAC3_Init 2 */
+
+}
+
+/**
+  * @brief FMAC Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_FMAC_Init(void)
+{
+
+  /* USER CODE BEGIN FMAC_Init 0 */
+
+  /* USER CODE END FMAC_Init 0 */
+
+  /* USER CODE BEGIN FMAC_Init 1 */
+
+  /* USER CODE END FMAC_Init 1 */
+  hfmac.Instance = FMAC;
+  if (HAL_FMAC_Init(&hfmac) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN FMAC_Init 2 */
+
+  /* USER CODE END FMAC_Init 2 */
 
 }
 

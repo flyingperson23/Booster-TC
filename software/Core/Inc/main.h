@@ -143,6 +143,8 @@ extern COMP_HandleTypeDef hcomp7;
 extern DAC_HandleTypeDef hdac2;
 extern DAC_HandleTypeDef hdac3;
 
+extern FMAC_HandleTypeDef hfmac;
+
 extern HRTIM_HandleTypeDef hhrtim1;
 
 extern SPI_HandleTypeDef hspi2;

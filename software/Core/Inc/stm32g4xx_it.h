@@ -59,6 +59,7 @@ void TIM4_IRQHandler(void);
 void USART3_IRQHandler(void);
 void COMP1_2_3_IRQHandler(void);
 void COMP4_5_6_IRQHandler(void);
+void FMAC_IRQHandler(void);
 /* USER CODE BEGIN EFP */
 
 /* USER CODE END EFP */
