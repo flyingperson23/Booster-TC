@@ -87,8 +87,8 @@ void Error_Handler(void);
 #define LED_TMP_GPIO_Port GPIOB
 #define LED_I_IN_Pin GPIO_PIN_1
 #define LED_I_IN_GPIO_Port GPIOB
-#define INT_Pin GPIO_PIN_2
-#define INT_GPIO_Port GPIOB
+#define SCR_Pin GPIO_PIN_2
+#define SCR_GPIO_Port GPIOB
 #define TX_Pin GPIO_PIN_10
 #define TX_GPIO_Port GPIOB
 #define VAC_SENSE_Pin GPIO_PIN_11
@@ -105,8 +105,8 @@ void Error_Handler(void);
 #define DRIVE_EN_GPIO_Port GPIOA
 #define CS_DRIVE_Pin GPIO_PIN_11
 #define CS_DRIVE_GPIO_Port GPIOA
-#define SCR_Pin GPIO_PIN_12
-#define SCR_GPIO_Port GPIOA
+#define INT_Pin GPIO_PIN_12
+#define INT_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
@@ -153,8 +153,8 @@ extern TIM_HandleTypeDef htim2;
 extern TIM_HandleTypeDef htim3;
 extern TIM_HandleTypeDef htim4;
 extern TIM_HandleTypeDef htim8;
-extern TIM_HandleTypeDef htim16;
 extern TIM_HandleTypeDef htim17;
+extern TIM_HandleTypeDef htim20;
 
 extern UART_HandleTypeDef huart3;
 /* USER CODE END Private defines */

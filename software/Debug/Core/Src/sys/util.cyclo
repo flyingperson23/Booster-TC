@@ -1,0 +1,4 @@
+../Core/Src/sys/util.c:10:6:fconstrain	3
+../Core/Src/sys/util.c:15:6:uconstrain	3
+../Core/Src/sys/util.c:20:6:iconstrain	3
+../Core/Src/sys/util.c:25:9:GPIORead	1

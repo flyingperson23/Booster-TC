@@ -1,0 +1,4 @@
+../Core/Src/power/scr.c:10:6:SCRBlock	1
+../Core/Src/power/scr.c:16:6:SCRIncrement	2
+../Core/Src/power/scr.c:26:6:SCRBypass	1
+../Core/Src/power/scr.c:32:9:SCRBypassStatus	1

@@ -1,0 +1,6 @@
+../Core/Src/power/boost_compensators.c:19:7:Run2p2zFilter	1
+../Core/Src/power/boost_compensators.c:31:6:Init2p2zFilter	1
+../Core/Src/power/boost_compensators.c:39:6:Reset2p2zFilter	1
+../Core/Src/power/boost_compensators.c:48:6:BoostInit	1
+../Core/Src/power/boost_compensators.c:59:6:BoostSlowLoop	2
+../Core/Src/power/boost_compensators.c:72:6:BoostFastLoop	1

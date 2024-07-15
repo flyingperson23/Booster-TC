@@ -1,0 +1,26 @@
+/*
+ * boost_compensators.h
+ *
+ *  Created on: Jul 13, 2024
+ *      Author: flyin
+ */
+
+#ifndef INC_SCR_H_
+#define INC_SCR_H_
+
+#include <stdint.h>
+#include "main.h"
+#include "sys/util.h"
+
+#define SCR_PULSE_LENGTH 50
+#define SCR_TIM TIM20
+#define SCR_MAX_DELAY 1000
+#define SCR_MIN_DELAY 10
+#define SCR_STEP (SCR_MAX_DELAY - SCR_MIN_DELAY) / 100
+
+void SCRBlock(); // lets no current through
+void SCRIncrement(); // steps forward pulse timing to let more power through
+void SCRBypass(); // lets full power through
+uint8_t SCRBypassStatus(); // 1 if letting full power through, 0 otherwise
+
+#endif /* INC_SCR_H_ */

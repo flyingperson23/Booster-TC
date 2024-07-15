@@ -1,0 +1,25 @@
+comp3 is ocd, sets flag on trigger
+comp1 rising edge, resets output sync timer (pwm triggers before new rising edge)
+comp2 both edges, resets measure timer (input capture, on interrupt set output sync timer ccr to 2*measure timer ccr - val, set output pwm arr=2*ccr, pulse=ccr)
+output pwm timer resets on output sync timer trigger
+
+output pwm = tim8
+output sync timer = tim2
+input measure timer = tim4
+
+tim3 = lights pwm
+comp6 = ac sync
+adc1 = therm
+tim20 = scr
+tim6 = background loop
+tim7 = led pulse
+
+adc2, adc4 = vac, i_l
+adc5 = vbus
+comp7/dac2 = triggers on inductor overcurrent
+comp3/dac3 triggers on primary overcurrent
+
+background tasks:
+cfg scr/boost
+measure therm
+set leds

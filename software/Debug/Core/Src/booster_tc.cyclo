@@ -1,3 +1,4 @@
-../Core/Src/booster_tc.c:16:6:booster_init	1
-../Core/Src/booster_tc.c:24:6:booster_loop	1
-../Core/Src/booster_tc.c:29:6:background_loop	8
+../Core/Src/booster_tc.c:16:6:stop	1
+../Core/Src/booster_tc.c:20:6:booster_init	1
+../Core/Src/booster_tc.c:28:6:booster_loop	1
+../Core/Src/booster_tc.c:33:6:background_loop	8

@@ -9,18 +9,22 @@
 #define INC_BOOSTER_TC_H_
 
 #include <stdint.h>
-#include "boost_compensators.h"
 #include "stm32g474xx.h"
-#include "vars.h"
-#include "cmds.h"
-#include "uart.h"
+#include "power/boost_compensators.h"
+#include "power/scr.h"
+#include "sys/vars.h"
+#include "sys/cmds.h"
+#include "sys/uart.h"
+#include "sys/util.h"
+#include "status/fault.h"
 
 void booster_init();
 void booster_loop();
 void background_loop();
 
+void stop();
+
 // power input
-extern int scr_delay;
 extern int vref;
 extern uint8_t power_state;
 #define STATE_OFF 0
@@ -30,11 +34,5 @@ extern uint8_t power_state;
 extern uint8_t mode;
 #define MODE_AUTO 0
 #define MODE_MANUAL 1
-
-extern uint8_t fault;
-#define NOFAULT 0
-#define FAULT_OC 1
-#define FAULT_OV 2
-#define FAULT_TEMP 3
 
 #endif /* INC_BOOSTER_TC_H_ */

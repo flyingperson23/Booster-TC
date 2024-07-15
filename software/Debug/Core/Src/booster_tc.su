@@ -1,3 +1,4 @@
-../Core/Src/booster_tc.c:16:6:booster_init	8	static
-../Core/Src/booster_tc.c:24:6:booster_loop	4	static
-../Core/Src/booster_tc.c:29:6:background_loop	4	static
+../Core/Src/booster_tc.c:16:6:stop	4	static
+../Core/Src/booster_tc.c:20:6:booster_init	8	static
+../Core/Src/booster_tc.c:28:6:booster_loop	4	static
+../Core/Src/booster_tc.c:33:6:background_loop	8	static
