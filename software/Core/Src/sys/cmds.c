@@ -72,7 +72,7 @@ uint8_t CMD_fault(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
 			ttprintf("No faults active");
 		} else {
 			if (fault & FAULT_OC) {
-
+				ttprintf("Input current of %i above limit of %i", );
 			}
 			if (fault & FAULT_OV) {
 
