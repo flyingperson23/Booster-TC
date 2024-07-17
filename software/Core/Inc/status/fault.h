@@ -13,6 +13,8 @@
 #include "sys/vars.h"
 #include "status/led.h"
 
+void FaultHandle();
+
 extern uint8_t fault;
 extern uint8_t waiting;
 #define NOFAULT 0

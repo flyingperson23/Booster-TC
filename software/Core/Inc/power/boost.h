@@ -1,15 +1,18 @@
 /*
- * boost_compensators.h
+ * boost.h
  *
  *  Created on: Jul 8, 2024
  *      Author: flyin
  */
 
-#ifndef INC_BOOST_COMPENSATORS_H_
-#define INC_BOOST_COMPENSATORS_H_
+#ifndef INC_BOOST_H_
+#define INC_BOOST_H_
+
+// controls boost converter for bus voltage
 
 #include "sys/vars.h"
 #include "sys/util.h"
+#include "status/fault.h"
 #include "booster_tc.h"
 
 // 2p2z => y[n] = A1 y[n-1] + A2 y[n-2] + B0 x[n] + B1 x[n-1] + B2 x[n-2]
@@ -55,12 +58,15 @@ extern Filter2p2z CompensatorV;
 extern Filter2p2z CompensatorI;
 extern Filter2p2z FilterVFF;
 
+extern uint32_t vref;
 extern float VInv_rms;
 extern float VInvSq_rms;
 extern float I_rq;
+extern float vbus;
+extern float I_L;
 
 void BoostInit();
 void BoostSlowLoop(float vbus, float vac);
 void BoostFastLoop(float vac, float I_L);
 
-#endif /* INC_BOOST_COMPENSATORS_H_ */
+#endif /* INC_BOOST_H_ */

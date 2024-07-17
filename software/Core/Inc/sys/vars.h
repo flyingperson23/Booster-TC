@@ -37,7 +37,12 @@ int64_t GetValue(uint8_t index);
 #define MAX_AC_I 1
 #define MAX_OUT_V 2
 #define MAX_TEMP 3
-#define AUTORESET_TIME 4
+#define MAX_I_L 4
+#define CT_FACTOR 5
+#define VDRIVE 6
+#define RAMP_START 7
+#define RAMP_END 8
+#define AUTORESET_TIME 9
 
 
 #endif /* INC_VARS_H_ */

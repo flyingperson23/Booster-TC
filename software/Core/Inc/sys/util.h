@@ -17,4 +17,10 @@ void iconstrain(int * var, int min, int max);
 
 uint8_t GPIORead(GPIO_TypeDef * bank, uint16_t pin); // pin is bitmask - for pin 3, pin = 0b0000000000001000
 
+int AmpsToCounts(float amps); // for I_L
+float CountsToAmps(int counts);
+
+float CountsToVolts(int counts); // for general adc
+int VoltsToCounts(float volts);
+
 #endif /* INC_SYS_UTIL_H_ */

@@ -8,6 +8,7 @@
 #ifndef INC_CMDS_H_
 #define INC_CMDS_H_
 
+#include <power/boost.h>
 #include "sys/tterm/TTerm.h"
 #include "main.h"
 #include <stdint.h>
@@ -16,6 +17,7 @@
 #include <string.h>
 #include "sys/vars.h"
 #include "status/fault.h"
+#include "booster_tc.h"
 
 void CmdsInit();
 

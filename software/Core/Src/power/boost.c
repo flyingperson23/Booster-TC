@@ -1,20 +1,28 @@
 /*
- * boost_compensators.c
+ * boost.c
  *
  *  Created on: Jul 8, 2024
  *      Author: flyin
  */
 
-#include "power/boost_compensators.h"
+#include <power/boost.h>
 
 Filter2p2z CompensatorV;
 Filter2p2z CompensatorI;
 Filter2p2z FilterVFF;
 
+uint32_t vref = 0;
 float VInv_rms = 1;
 float VInvSq_rms = 1;
 float I_rq = 0;
 float dtc = 0;
+float vbus = 0;
+float I_L = 0;
+float vac = 0;
+
+uint32_t vbusint = 0;
+uint32_t I_Lint = 0;
+uint32_t vacint = 0;
 
 float Run2p2zFilter(Filter2p2z * filter, float error) {
 	filter->x[2] = filter->x[1];
@@ -53,12 +61,30 @@ void BoostInit() {
 	Reset2p2zFilter(&CompensatorV);
 	Reset2p2zFilter(&CompensatorI);
 	Reset2p2zFilter(&FilterVFF);
+
+	HAL_ADCEx_Calibration_Start(&hadc2, ADC_SINGLE_ENDED);
+	HAL_ADC_Start_DMA(&hadc2, &vacint, 1);
+
+	HAL_ADCEx_Calibration_Start(&hadc4, ADC_SINGLE_ENDED);
+	HAL_ADC_Start_DMA(&hadc4, &I_Lint, 1);
+
+	HAL_ADCEx_Calibration_Start(&hadc5, ADC_SINGLE_ENDED);
+	HAL_ADC_Start_DMA(&hadc5, &vbusint, 1);
+
+	// init hrtim1
 }
 
-// must pass abs(vac)
+// on I_L measure interrupt, check + execute boostfastloop
+// on vbus measure interrupt, check + execute boostfastloop
+
+
+// must pass abs(vac) in volts, vbus in volts
 void BoostSlowLoop(float vbus, float vac) {
+	if (vbus > GetValue(MAX_OUT_V)) {
+		fault |= FAULT_OV;
+		FaultHandle();
+	}
 	Run2p2zFilter(&CompensatorV, vref - vbus);
-	Run2p2zFilter(&FilterVFF, vac);
 
 	if (FilterVFF.y[0] == 0) {
 		VInvSq_rms = 1;
@@ -69,10 +95,43 @@ void BoostSlowLoop(float vbus, float vac) {
 	}
 }
 
+// must pass abs(vac) in volts, I_L in amps
 void BoostFastLoop(float vac, float I_L) {
 	I_rq = vac * CompensatorV.y[0] * VInvSq_rms;
 	fconstrain(&I_rq, 0, vac * GetValue(MAX_AC_I) * VInv_rms);
 	dtc = Run2p2zFilter(&CompensatorI, I_L - I_rq);
 	fconstrain(&dtc, 0, 0.8);
 	// set dtc
+}
+
+uint8_t flag = 0;
+
+void ADC1_2_IRQHandler(void) {
+  //HAL_ADC_IRQHandler(&hadc1); ignore adc1
+
+	if (flag == 2) {
+		flag = 0;
+		//call boost fast loop
+	} else {
+		flag = 1;
+	}
+}
+
+void ADC4_IRQHandler(void) {
+	if (flag == 1) {
+		flag = 0;
+		// call boost fast loop
+	} else {
+		flag = 2;
+	}
+}
+
+void ADC5_IRQHandler(void) {
+
+  //process adc stuff
+	//call boost slow loop with latest vac from fast loop
+}
+
+void callback(DMA_HandleTypeDef *_hdma) {
+
 }

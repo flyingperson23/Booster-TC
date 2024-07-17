@@ -19,9 +19,14 @@ int64_t vars_buffer[NUM_VARS];
 void AddVars() {
 	AddVar("max_pri_i", 300, "A", MAX_PRI_I, 0, 5000);
 	AddVar("max_ac_i", 15, "A", MAX_AC_I, 0, 1000);
-	AddVar("max_out_v", 400, "V", MAX_OUT_V, 0, 400);
+	AddVar("max_out_v", 425, "V", MAX_OUT_V, 0, 500);
 	AddVar("max_temp", 60, "C", MAX_TEMP, 0, 200);
-	AddVar("autoreset_time", 5000, "ms", AUTORESET_TIME, -1, 1048576);
+	AddVar("autoreset_time", 5000, "ms", AUTORESET_TIME, -1, 1000000);
+	AddVar("max_i_l", 100, "A", MAX_I_L, 0, 1000);
+	AddVar("ct_conv_factor", 5, "mV/A", CT_FACTOR, 0, 1000000); // 1:1000 ct + 5R1 burden - 1 A out / 1000 A in * 5100mv out / 1 A out = 5.1 mV/A
+	AddVar("vdrive", 22, "V", VDRIVE, 10, 22);
+	AddVar("fan_ramp_start", 35, "C", RAMP_START, 0, 200);
+	AddVar("fan_ramp_end", 50, "C", RAMP_END, 0, 200);
 }
 
 void AddVar(char * name, int64_t default_value, char * suffix, uint8_t index, int64_t min, int64_t max) {

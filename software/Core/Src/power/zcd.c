@@ -6,3 +6,12 @@
  */
 
 #include "power/zcd.h"
+
+/*
+ *
+ * init
+ * TIM_HandleTypeDef htim2;
+TIM_HandleTypeDef htim4;
+TIM_HandleTypeDef htim8;
+
+ */

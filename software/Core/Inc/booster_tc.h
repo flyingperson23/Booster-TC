@@ -9,9 +9,11 @@
 #define INC_BOOSTER_TC_H_
 
 #include <stdint.h>
-#include "stm32g474xx.h"
-#include "power/boost_compensators.h"
+#include <math.h>
+#include "main.h"
+#include "power/boost.h"
 #include "power/scr.h"
+#include "power/buck.h"
 #include "sys/vars.h"
 #include "sys/cmds.h"
 #include "sys/uart.h"
@@ -25,7 +27,6 @@ void background_loop();
 void stop();
 
 // power input
-extern int vref;
 extern uint8_t power_state;
 #define STATE_OFF 0
 #define STATE_SCR 1
@@ -34,5 +35,7 @@ extern uint8_t power_state;
 extern uint8_t mode;
 #define MODE_AUTO 0
 #define MODE_MANUAL 1
+
+extern float temps[2];
 
 #endif /* INC_BOOSTER_TC_H_ */

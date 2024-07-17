@@ -1,0 +1,3 @@
+../Core/Src/power/buck.c:10:6:SPIInit	8	static
+../Core/Src/power/buck.c:15:6:FanSet	16	static
+../Core/Src/power/buck.c:21:6:DriveSet	16	static

@@ -2,3 +2,7 @@
 ../Core/Src/sys/util.c:15:6:uconstrain	24	static
 ../Core/Src/sys/util.c:20:6:iconstrain	24	static
 ../Core/Src/sys/util.c:25:9:GPIORead	16	static
+../Core/Src/sys/util.c:29:5:AmpsToCounts	16	static
+../Core/Src/sys/util.c:33:7:CountsToAmps	16	static
+../Core/Src/sys/util.c:37:7:CountsToVolts	16	static
+../Core/Src/sys/util.c:41:5:VoltsToCounts	16	static

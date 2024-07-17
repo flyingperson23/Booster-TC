@@ -1,4 +1,5 @@
 ../Core/Src/booster_tc.c:16:6:stop	1
 ../Core/Src/booster_tc.c:20:6:booster_init	1
-../Core/Src/booster_tc.c:28:6:booster_loop	1
-../Core/Src/booster_tc.c:33:6:background_loop	8
+../Core/Src/booster_tc.c:60:6:booster_loop	1
+../Core/Src/booster_tc.c:68:6:TIM6_DAC_IRQHandler	3
+../Core/Src/booster_tc.c:80:6:background_loop	14

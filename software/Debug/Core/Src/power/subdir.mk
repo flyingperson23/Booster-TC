@@ -5,17 +5,20 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../Core/Src/power/boost_compensators.c \
+../Core/Src/power/boost.c \
+../Core/Src/power/buck.c \
 ../Core/Src/power/scr.c \
 ../Core/Src/power/zcd.c 
 
 OBJS += \
-./Core/Src/power/boost_compensators.o \
+./Core/Src/power/boost.o \
+./Core/Src/power/buck.o \
 ./Core/Src/power/scr.o \
 ./Core/Src/power/zcd.o 
 
 C_DEPS += \
-./Core/Src/power/boost_compensators.d \
+./Core/Src/power/boost.d \
+./Core/Src/power/buck.d \
 ./Core/Src/power/scr.d \
 ./Core/Src/power/zcd.d 
 
@@ -27,7 +30,7 @@ Core/Src/power/%.o Core/Src/power/%.su Core/Src/power/%.cyclo: ../Core/Src/power
 clean: clean-Core-2f-Src-2f-power
 
 clean-Core-2f-Src-2f-power:
-	-$(RM) ./Core/Src/power/boost_compensators.cyclo ./Core/Src/power/boost_compensators.d ./Core/Src/power/boost_compensators.o ./Core/Src/power/boost_compensators.su ./Core/Src/power/scr.cyclo ./Core/Src/power/scr.d ./Core/Src/power/scr.o ./Core/Src/power/scr.su ./Core/Src/power/zcd.cyclo ./Core/Src/power/zcd.d ./Core/Src/power/zcd.o ./Core/Src/power/zcd.su
+	-$(RM) ./Core/Src/power/boost.cyclo ./Core/Src/power/boost.d ./Core/Src/power/boost.o ./Core/Src/power/boost.su ./Core/Src/power/buck.cyclo ./Core/Src/power/buck.d ./Core/Src/power/buck.o ./Core/Src/power/buck.su ./Core/Src/power/scr.cyclo ./Core/Src/power/scr.d ./Core/Src/power/scr.o ./Core/Src/power/scr.su ./Core/Src/power/zcd.cyclo ./Core/Src/power/zcd.d ./Core/Src/power/zcd.o ./Core/Src/power/zcd.su
 
 .PHONY: clean-Core-2f-Src-2f-power
 
