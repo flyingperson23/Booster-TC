@@ -3231,7 +3231,7 @@
 		)
 		(uuid "ff056f9b-217e-4732-ade7-29ef3f70c271")
 	)
-	(global_label "GDT2_INB"
+	(global_label "GDT_B"
 		(shape input)
 		(at 91.44 101.6 180)
 		(fields_autoplaced yes)
@@ -3243,7 +3243,7 @@
 		)
 		(uuid "2d122a18-ef9b-4c79-9fb9-19cacd1bd518")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.5648 101.6 0)
+			(at 82.7096 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3319,7 +3319,7 @@
 			)
 		)
 	)
-	(global_label "GDT2_INA"
+	(global_label "GDT_A"
 		(shape input)
 		(at 91.44 99.06 180)
 		(fields_autoplaced yes)
@@ -3331,7 +3331,7 @@
 		)
 		(uuid "4db65a52-f225-4a64-bf1b-d774d0558e13")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 79.7462 99.06 0)
+			(at 82.891 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3407,7 +3407,7 @@
 			)
 		)
 	)
-	(global_label "GDT1_INB"
+	(global_label "GDT_B"
 		(shape input)
 		(at 92.71 48.26 180)
 		(fields_autoplaced yes)
@@ -3419,7 +3419,7 @@
 		)
 		(uuid "61b6236a-9515-4fcd-8e60-f18631bd0559")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 80.8348 48.26 0)
+			(at 83.9796 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,7 +3539,7 @@
 			)
 		)
 	)
-	(global_label "GDT1_INA"
+	(global_label "GDT_A"
 		(shape input)
 		(at 92.71 45.72 180)
 		(fields_autoplaced yes)
@@ -3551,7 +3551,7 @@
 		)
 		(uuid "b616b5e3-07ff-4d6e-abcd-b8e3f1763841")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 81.0162 45.72 0)
+			(at 84.161 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)

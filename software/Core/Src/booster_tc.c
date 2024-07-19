@@ -25,6 +25,7 @@ void booster_init() {
 	UartInit();
 	BoostInit();
 	SCRInit();
+	PWMInit();
 
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
 	HAL_ADC_Start_DMA(&hadc1, temp_buffer, 2);
@@ -38,9 +39,6 @@ void booster_init() {
 	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_3);
 	HAL_TIM_PWM_Start(&htim3, TIM_CHANNEL_4);
 
-	HAL_COMP_Start(&hcomp1);
-	HAL_COMP_Start(&hcomp2);
-	HAL_COMP_Start(&hcomp3);
 	HAL_COMP_Start(&hcomp6);
 	HAL_COMP_Start(&hcomp7);
 
@@ -78,7 +76,10 @@ void TIM6_DAC_IRQHandler(void) {
 uint32_t scr_counter = 0;
 void background_loop() {
 
+	// get 24v sense from adc3
+
 	HAL_GPIO_WritePin(DRIVE_EN_GPIO_Port, DRIVE_EN_Pin, SET);
+	HAL_GPIO_WritePin(PMP_EN_GPIO_Port, PMP_EN_Pin, SET);
 
 	float vdrive = GetValue(VDRIVE) - 10;
 	vdrive = (vdrive * 255.0f) / 12.0f;

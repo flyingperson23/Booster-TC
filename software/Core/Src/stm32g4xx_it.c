@@ -59,13 +59,10 @@ extern DMA_HandleTypeDef hdma_adc1;
 extern DMA_HandleTypeDef hdma_adc2;
 extern DMA_HandleTypeDef hdma_adc4;
 extern DMA_HandleTypeDef hdma_adc5;
-extern COMP_HandleTypeDef hcomp1;
-extern COMP_HandleTypeDef hcomp2;
 extern COMP_HandleTypeDef hcomp3;
 extern COMP_HandleTypeDef hcomp6;
 extern FMAC_HandleTypeDef hfmac;
-extern TIM_HandleTypeDef htim4;
-extern UART_HandleTypeDef huart3;
+extern TIM_HandleTypeDef htim1;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -237,31 +234,31 @@ void DMA1_Channel2_IRQHandler(void)
 }
 
 /**
-  * @brief This function handles TIM4 global interrupt.
+  * @brief This function handles EXTI line[9:5] interrupts.
   */
-void TIM4_IRQHandler(void)
+void EXTI9_5_IRQHandler(void)
 {
-  /* USER CODE BEGIN TIM4_IRQn 0 */
+  /* USER CODE BEGIN EXTI9_5_IRQn 0 */
 
-  /* USER CODE END TIM4_IRQn 0 */
-  HAL_TIM_IRQHandler(&htim4);
-  /* USER CODE BEGIN TIM4_IRQn 1 */
+  /* USER CODE END EXTI9_5_IRQn 0 */
+  HAL_GPIO_EXTI_IRQHandler(INT_Pin);
+  /* USER CODE BEGIN EXTI9_5_IRQn 1 */
 
-  /* USER CODE END TIM4_IRQn 1 */
+  /* USER CODE END EXTI9_5_IRQn 1 */
 }
 
 /**
-  * @brief This function handles USART3 global interrupt / USART3 wake-up interrupt through EXTI line 28.
+  * @brief This function handles TIM1 trigger and commutation interrupts and TIM17 global interrupt.
   */
-void USART3_IRQHandler(void)
+void TIM1_TRG_COM_TIM17_IRQHandler(void)
 {
-  /* USER CODE BEGIN USART3_IRQn 0 */
+  /* USER CODE BEGIN TIM1_TRG_COM_TIM17_IRQn 0 */
 
-  /* USER CODE END USART3_IRQn 0 */
-  HAL_UART_IRQHandler(&huart3);
-  /* USER CODE BEGIN USART3_IRQn 1 */
+  /* USER CODE END TIM1_TRG_COM_TIM17_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim1);
+  /* USER CODE BEGIN TIM1_TRG_COM_TIM17_IRQn 1 */
 
-  /* USER CODE END USART3_IRQn 1 */
+  /* USER CODE END TIM1_TRG_COM_TIM17_IRQn 1 */
 }
 
 /**
@@ -300,8 +297,6 @@ void COMP1_2_3_IRQHandler(void)
   /* USER CODE BEGIN COMP1_2_3_IRQn 0 */
 
   /* USER CODE END COMP1_2_3_IRQn 0 */
-  HAL_COMP_IRQHandler(&hcomp1);
-  HAL_COMP_IRQHandler(&hcomp2);
   HAL_COMP_IRQHandler(&hcomp3);
   /* USER CODE BEGIN COMP1_2_3_IRQn 1 */
 

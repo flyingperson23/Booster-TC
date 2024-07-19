@@ -13,8 +13,8 @@
 
 extern uint8_t blinking;
 #define LED_VBUS 1
-#define LED_TEMP 3
-#define LED_I_IN 4
+#define LED_TEMP 2
+#define LED_I_IN 3
 
 void LEDInit();
 void LEDSetValue(uint8_t LED, uint8_t value); // value = 0 to 255

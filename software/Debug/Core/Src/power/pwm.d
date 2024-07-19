@@ -1,4 +1,4 @@
-Core/Src/booster_tc.o: ../Core/Src/booster_tc.c ../Core/Inc/booster_tc.h \
+Core/Src/power/pwm.o: ../Core/Src/power/pwm.c ../Core/Inc/power/pwm.h \
  ../Core/Inc/main.h ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h \
  ../Core/Inc/stm32g4xx_hal_conf.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h \
@@ -38,16 +38,8 @@ Core/Src/booster_tc.o: ../Core/Src/booster_tc.c ../Core/Inc/booster_tc.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h \
  ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h \
- ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h \
- ../Core/Inc/power/boost.h ../Core/Inc/sys/vars.h ../Core/Inc/sys/util.h \
- ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h \
- ../Core/Inc/status/fault.h ../Core/Inc/status/led.h ../Core/Inc/main.h \
- ../Core/Inc/power/scr.h ../Core/Inc/power/buck.h ../Core/Inc/power/pwm.h \
- ../Core/Inc/sys/vars.h ../Core/Inc/sys/cmds.h ../Core/Inc/power/boost.h \
- ../Core/Inc/sys/tterm/TTerm.h ../Core/Inc/sys/tterm/TTerm_VT100.h \
- ../Core/Inc/sys/tterm/TTerm_config.h ../Core/Inc/sys/uart.h \
- ../Core/Inc/sys/util.h ../Core/Inc/status/fault.h
-../Core/Inc/booster_tc.h:
+ ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h
+../Core/Inc/power/pwm.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 ../Core/Inc/stm32g4xx_hal_conf.h:
@@ -89,22 +81,3 @@ Core/Src/booster_tc.o: ../Core/Src/booster_tc.c ../Core/Inc/booster_tc.h \
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart.h:
 ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_uart_ex.h:
-../Core/Inc/power/boost.h:
-../Core/Inc/sys/vars.h:
-../Core/Inc/sys/util.h:
-../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h:
-../Core/Inc/status/fault.h:
-../Core/Inc/status/led.h:
-../Core/Inc/main.h:
-../Core/Inc/power/scr.h:
-../Core/Inc/power/buck.h:
-../Core/Inc/power/pwm.h:
-../Core/Inc/sys/vars.h:
-../Core/Inc/sys/cmds.h:
-../Core/Inc/power/boost.h:
-../Core/Inc/sys/tterm/TTerm.h:
-../Core/Inc/sys/tterm/TTerm_VT100.h:
-../Core/Inc/sys/tterm/TTerm_config.h:
-../Core/Inc/sys/uart.h:
-../Core/Inc/sys/util.h:
-../Core/Inc/status/fault.h:

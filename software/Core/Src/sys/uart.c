@@ -17,8 +17,11 @@ void UartInit() {
 
 
 void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
-  HAL_UART_Receive_IT(&huart3, rx_buff, 1);
-  TERM_processBuffer(rx_buff, 1, terminal);
+	if (mode == MODE_MANUAL) {
+		  HAL_UART_Receive_IT(&huart3, rx_buff, 1);
+		  TERM_processBuffer(rx_buff, 1, terminal);
+	}
+
 }
 
 void printer(char * format, ...) {

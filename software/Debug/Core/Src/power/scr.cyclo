@@ -1,5 +1,5 @@
 ../Core/Src/power/scr.c:10:6:SCRInit	1
-../Core/Src/power/scr.c:14:6:SCRBlock	1
-../Core/Src/power/scr.c:20:6:SCRIncrement	2
-../Core/Src/power/scr.c:30:6:SCRBypass	1
-../Core/Src/power/scr.c:36:9:SCRBypassStatus	1
+../Core/Src/power/scr.c:15:6:SCRBlock	1
+../Core/Src/power/scr.c:21:6:SCRIncrement	2
+../Core/Src/power/scr.c:31:6:SCRBypass	1
+../Core/Src/power/scr.c:37:9:SCRBypassStatus	1

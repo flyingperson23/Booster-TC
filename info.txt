@@ -5,7 +5,7 @@ output pwm timer resets on output sync timer trigger
 
 output pwm = tim8
 output sync timer = tim2
-input measure timer = tim4
+input measure timer = tim1
 
 tim3 = lights pwm
 comp6 = ac sync
@@ -23,3 +23,17 @@ background tasks:
 cfg scr/boost
 measure therm
 set leds
+
+
+
+
+
+
+new::
+tim1 input capture and pwm
+comp1 has no int, just measures + resets
+on input capture trigger, measure if comp1 is high or low
+if low, we got first half pulse - set pwm arr = 2*measured, ccr = 2*measured-delay
+also set output pwm ccr=measured, arr=2*measured
+on pwm trigger, hardware reset output and software write gdt disable pins
+

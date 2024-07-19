@@ -19,10 +19,10 @@ void LEDSetValue(uint8_t LED, uint8_t value) {
 		TIM3->CCR1 = (uint32_t) value;
 	}
 	if (LED == LED_TEMP) {
-		TIM3->CCR3 = (uint32_t) value;
+		TIM3->CCR2 = (uint32_t) value;
 	}
 	if (LED == LED_I_IN) {
-		TIM3->CCR4 = (uint32_t) value;
+		TIM3->CCR3 = (uint32_t) value;
 	}
 	LEDSetBlinking(LED, 0);
 }
@@ -40,9 +40,9 @@ void TIM7_DAC_IRQHandler(void) {
 		TIM3->CCR1 = blink_state;
 	}
 	if (blinking & (1 << LED_TEMP)) {
-		TIM3->CCR3 = blink_state;
+		TIM3->CCR2 = blink_state;
 	}
 	if (blinking & (1 << LED_I_IN)) {
-		TIM3->CCR4 = blink_state;
+		TIM3->CCR3 = blink_state;
 	}
 }

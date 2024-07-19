@@ -43,10 +43,10 @@ Core/Src/status/fault.o: ../Core/Src/status/fault.c \
  ../Core/Inc/power/boost.h ../Core/Inc/sys/vars.h ../Core/Inc/sys/util.h \
  ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h \
  ../Core/Inc/power/scr.h ../Core/Inc/main.h ../Core/Inc/power/buck.h \
- ../Core/Inc/sys/vars.h ../Core/Inc/sys/cmds.h ../Core/Inc/power/boost.h \
- ../Core/Inc/sys/tterm/TTerm.h ../Core/Inc/sys/tterm/TTerm_VT100.h \
- ../Core/Inc/sys/tterm/TTerm_config.h ../Core/Inc/sys/uart.h \
- ../Core/Inc/sys/util.h ../Core/Inc/status/fault.h \
+ ../Core/Inc/power/pwm.h ../Core/Inc/sys/vars.h ../Core/Inc/sys/cmds.h \
+ ../Core/Inc/power/boost.h ../Core/Inc/sys/tterm/TTerm.h \
+ ../Core/Inc/sys/tterm/TTerm_VT100.h ../Core/Inc/sys/tterm/TTerm_config.h \
+ ../Core/Inc/sys/uart.h ../Core/Inc/sys/util.h ../Core/Inc/status/fault.h \
  ../Core/Inc/status/led.h
 ../Core/Inc/status/fault.h:
 ../Core/Inc/booster_tc.h:
@@ -98,6 +98,7 @@ Core/Src/status/fault.o: ../Core/Src/status/fault.c \
 ../Core/Inc/power/scr.h:
 ../Core/Inc/main.h:
 ../Core/Inc/power/buck.h:
+../Core/Inc/power/pwm.h:
 ../Core/Inc/sys/vars.h:
 ../Core/Inc/sys/cmds.h:
 ../Core/Inc/power/boost.h:

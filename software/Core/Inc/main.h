@@ -61,8 +61,8 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define GDT1A_Pin GPIO_PIN_13
-#define GDT1A_GPIO_Port GPIOC
+#define PMP_EN_Pin GPIO_PIN_13
+#define PMP_EN_GPIO_Port GPIOC
 #define FAN_EN_Pin GPIO_PIN_14
 #define FAN_EN_GPIO_Port GPIOC
 #define CS_FAN_Pin GPIO_PIN_15
@@ -77,20 +77,19 @@ void Error_Handler(void);
 #define THERM1_GPIO_Port GPIOA
 #define CTM_1_Pin GPIO_PIN_4
 #define CTM_1_GPIO_Port GPIOA
-#define CTM_2_Pin GPIO_PIN_5
-#define CTM_2_GPIO_Port GPIOA
+#define INT_Pin GPIO_PIN_5
+#define INT_GPIO_Port GPIOA
+#define INT_EXTI_IRQn EXTI9_5_IRQn
 #define LED_VBUS_Pin GPIO_PIN_6
 #define LED_VBUS_GPIO_Port GPIOA
-#define CTP_2_Pin GPIO_PIN_7
-#define CTP_2_GPIO_Port GPIOA
-#define LED_TMP_Pin GPIO_PIN_0
-#define LED_TMP_GPIO_Port GPIOB
-#define LED_I_IN_Pin GPIO_PIN_1
+#define LED_TEMP_Pin GPIO_PIN_7
+#define LED_TEMP_GPIO_Port GPIOA
+#define LED_I_IN_Pin GPIO_PIN_0
 #define LED_I_IN_GPIO_Port GPIOB
+#define V24_NI_Pin GPIO_PIN_1
+#define V24_NI_GPIO_Port GPIOB
 #define SCR_Pin GPIO_PIN_2
 #define SCR_GPIO_Port GPIOB
-#define TX_Pin GPIO_PIN_10
-#define TX_GPIO_Port GPIOB
 #define VAC_SENSE_Pin GPIO_PIN_11
 #define VAC_SENSE_GPIO_Port GPIOB
 #define MODE_IN_Pin GPIO_PIN_12
@@ -105,37 +104,31 @@ void Error_Handler(void);
 #define DRIVE_EN_GPIO_Port GPIOA
 #define CS_DRIVE_Pin GPIO_PIN_11
 #define CS_DRIVE_GPIO_Port GPIOA
-#define INT_Pin GPIO_PIN_12
-#define INT_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14
 #define TCK_GPIO_Port GPIOA
-#define TDI_Pin GPIO_PIN_15
-#define TDI_GPIO_Port GPIOA
-#define TDO_Pin GPIO_PIN_3
-#define TDO_GPIO_Port GPIOB
-#define GDT2B_Pin GPIO_PIN_4
-#define GDT2B_GPIO_Port GPIOB
-#define GDT2_DIS_Pin GPIO_PIN_5
+#define GDT_B_Pin GPIO_PIN_5
+#define GDT_B_GPIO_Port GPIOB
+#define GDT2_DIS_Pin GPIO_PIN_6
 #define GDT2_DIS_GPIO_Port GPIOB
-#define GDT2A_Pin GPIO_PIN_6
-#define GDT2A_GPIO_Port GPIOB
 #define GDT1_DIS_Pin GPIO_PIN_7
 #define GDT1_DIS_GPIO_Port GPIOB
-#define RX_Pin GPIO_PIN_8
-#define RX_GPIO_Port GPIOB
-#define GDT1B_Pin GPIO_PIN_9
-#define GDT1B_GPIO_Port GPIOB
+#define GDT_A_Pin GPIO_PIN_9
+#define GDT_A_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 extern ADC_HandleTypeDef hadc1;
 extern ADC_HandleTypeDef hadc2;
+extern ADC_HandleTypeDef hadc3;
 extern ADC_HandleTypeDef hadc4;
 extern ADC_HandleTypeDef hadc5;
+extern DMA_HandleTypeDef hdma_adc1;
+extern DMA_HandleTypeDef hdma_adc2;
+extern DMA_HandleTypeDef hdma_adc4;
+extern DMA_HandleTypeDef hdma_adc5;
 
 extern COMP_HandleTypeDef hcomp1;
-extern COMP_HandleTypeDef hcomp2;
 extern COMP_HandleTypeDef hcomp3;
 extern COMP_HandleTypeDef hcomp6;
 extern COMP_HandleTypeDef hcomp7;
@@ -149,9 +142,8 @@ extern HRTIM_HandleTypeDef hhrtim1;
 
 extern SPI_HandleTypeDef hspi2;
 
-extern TIM_HandleTypeDef htim2;
+extern TIM_HandleTypeDef htim1;
 extern TIM_HandleTypeDef htim3;
-extern TIM_HandleTypeDef htim4;
 extern TIM_HandleTypeDef htim6;
 extern TIM_HandleTypeDef htim7;
 extern TIM_HandleTypeDef htim8;

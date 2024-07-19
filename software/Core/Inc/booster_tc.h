@@ -14,6 +14,7 @@
 #include "power/boost.h"
 #include "power/scr.h"
 #include "power/buck.h"
+#include "power/pwm.h"
 #include "sys/vars.h"
 #include "sys/cmds.h"
 #include "sys/uart.h"

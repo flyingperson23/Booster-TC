@@ -2,5 +2,9 @@
 ../Core/Src/power/boost.c:39:6:Init2p2zFilter	32	static
 ../Core/Src/power/boost.c:47:6:Reset2p2zFilter	16	static
 ../Core/Src/power/boost.c:56:6:BoostInit	8	static
-../Core/Src/power/boost.c:80:6:BoostSlowLoop	16	static
-../Core/Src/power/boost.c:98:6:BoostFastLoop	16	static
+../Core/Src/power/boost.c:82:6:BoostSlowLoop	16	static
+../Core/Src/power/boost.c:99:6:BoostFastLoop	16	static
+../Core/Src/power/boost.c:109:6:ADC1_2_IRQHandler	4	static
+../Core/Src/power/boost.c:120:6:ADC4_IRQHandler	4	static
+../Core/Src/power/boost.c:129:6:ADC5_IRQHandler	4	static
+../Core/Src/power/boost.c:135:6:callback	16	static

@@ -10,6 +10,7 @@
 
 #include "sys/tterm/TTerm.h"
 #include "main.h"
+#include "booster_tc.h"
 #include "stm32g4xx_hal.h"
 #include <stdarg.h>
 #include <stdio.h>
