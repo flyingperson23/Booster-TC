@@ -37,6 +37,6 @@ extern uint8_t mode;
 #define MODE_AUTO 0
 #define MODE_MANUAL 1
 
-extern float temps[2];
+extern float temps[3];
 
 #endif /* INC_BOOSTER_TC_H_ */

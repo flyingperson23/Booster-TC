@@ -10,11 +10,13 @@
 uint8_t power_state = STATE_OFF;
 uint8_t mode = MODE_AUTO;
 
-uint32_t temp_buffer[2] = {0, 0};
-float temps[2] = {0.0f, 0.0f};
+uint32_t temp_buffer[3] = {0, 0, 0};
+float temps[3] = {0.0f, 0.0f, 0.0f};
 
 void stop() {
- // fill this in
+	SCRBlock();
+	PWMStop();
+	// fill this in
 }
 
 void booster_init() {
@@ -28,7 +30,7 @@ void booster_init() {
 	PWMInit();
 
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-	HAL_ADC_Start_DMA(&hadc1, temp_buffer, 2);
+	HAL_ADC_Start_DMA(&hadc1, temp_buffer, 3);
 
 	HAL_DAC_Start(&hdac2, DAC_CHANNEL_1);
 	HAL_DAC_Start(&hdac3, DAC_CHANNEL_1);
@@ -41,17 +43,6 @@ void booster_init() {
 
 	HAL_COMP_Start(&hcomp6);
 	HAL_COMP_Start(&hcomp7);
-
-
-	/*
-
-HRTIM_HandleTypeDef hhrtim1;
-
-TIM_HandleTypeDef htim2;
-TIM_HandleTypeDef htim4;
-TIM_HandleTypeDef htim8;
-	 *
-	 */
 }
 
 void booster_loop() {
@@ -62,21 +53,31 @@ float a = 1;
 float b = 1;
 float c = 1; //// need to get these for therm!!!!!!!!!!!!!
 
+
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
+
+}
+
 void TIM6_DAC_IRQHandler(void) {
-	TIM6->SR = ~TIM_FLAG_UPDATE;
-	for (int i = 0; i < 2; i++) {
-		if (temp_buffer[i] != 0) {
-			float R = 10000*CountsToVolts(temps[i]) / (2.9f - CountsToVolts(temps[i]));
-			temps[i] = 1.0f / (a + b * log(R) + c * log(R) * log(R) * log(R)) - 273.15f;
+	if ((TIM6->SR & TIM_FLAG_UPDATE) == TIM_FLAG_UPDATE) {
+		TIM6->SR = ~TIM_FLAG_UPDATE;
+		for (int i = 0; i < 2; i++) {
+			if (temp_buffer[i] != 0) {
+				float R = 10000*CountsToVolts(temps[i]) / (2.9f - CountsToVolts(temps[i]));
+				temps[i] = 1.0f / (a + b * log(R) + c * log(R) * log(R) * log(R)) - 273.15f;
+			}
 		}
+		// third temp
+		background_loop();
 	}
-	background_loop();
 }
 
 uint32_t scr_counter = 0;
 void background_loop() {
 
 	// get 24v sense from adc3
+
+	HAL_GPIO_EXTI_Callback(INT_Pin); // make sure we have the right int signal
 
 	HAL_GPIO_WritePin(DRIVE_EN_GPIO_Port, DRIVE_EN_Pin, SET);
 	HAL_GPIO_WritePin(PMP_EN_GPIO_Port, PMP_EN_Pin, SET);
@@ -89,6 +90,7 @@ void background_loop() {
 
 	float highest_temp = temps[0];
 	if (temps[1] > highest_temp) highest_temp = temps[1];
+	if (temps[2] > highest_temp) highest_temp = temps[2];
 
 	int ramp_start = GetValue(RAMP_START);
 	int ramp_end = GetValue(RAMP_END);
@@ -149,7 +151,8 @@ void background_loop() {
 				// disable boost timer
 			}
 			if (power_state == STATE_SCR) {
-				// enable scr timer, disable boost timer
+
+				//disable boost timer
 				scr_counter = (scr_counter + 1) % 100;
 				if (scr_counter == 0) {
 					SCRIncrement();
@@ -168,4 +171,6 @@ void background_loop() {
 	} else {
 		FaultHandle();
 	}
+
+
 }

@@ -1,15 +1,23 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,8.0.1*%
-%TF.CreationDate,2024-05-05T21:17:44-04:00*%
+%TF.CreationDate,2024-07-26T11:55:12-04:00*%
 %TF.ProjectId,booster-I-board,626f6f73-7465-4722-9d49-2d626f617264,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Legend,Bot*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 8.0.1) date 2024-05-05 21:17:44*
+G04 Created by KiCad (PCBNEW 8.0.1) date 2024-07-26 11:55:12*
 %MOMM*%
 %LPD*%
 G01*
 G04 APERTURE LIST*
+%ADD10C,0.120000*%
 G04 APERTURE END LIST*
+D10*
+%TO.C,TH1*%
+X161842224Y-90022500D02*
+X161332776Y-90022500D01*
+X161842224Y-88977500D02*
+X161332776Y-88977500D01*
+%TD*%
 M02*

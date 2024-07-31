@@ -11,8 +11,8 @@ tim3 = lights pwm
 comp6 = ac sync
 adc1 = therm
 tim20 = scr
-tim6 = background loop
 tim7 = led pulse
+tim6 = background loop
 
 adc2, adc4 = vac, i_l
 adc5 = vbus

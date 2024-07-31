@@ -15,13 +15,53 @@ void PWMInit() {
 	HAL_TIM_PWM_Start_IT(&htim1, TIM_CHANNEL_2);
 
 	HAL_TIM_PWM_Start_IT(&htim8, TIM_CHANNEL_3);
+	HAL_TIMEx_PWMN_Start(&htim8, TIM_CHANNEL_3);
 
 }
 
+uint8_t switching = 0;
 uint8_t ocdside = 0;
 uint32_t disablepins = 0;
 uint32_t delay = 0;
 uint32_t capture = 0; // full period length
+
+void PWMStart() {
+	TIM1->CR1 |= TIM_CR1_CEN;
+	TIM1->CNT = 0;
+
+	TIM8->ARR = 32767;
+	TIM8->CCR1 = 16383;
+	TIM8->CR1 |= TIM_CR1_CEN;
+	GPIOB->BSRR = GDT2_DIS_Pin << 16 | GDT1_DIS_Pin << 16;
+}
+
+void PWMStop() {
+	TIM1->CR1 &= ~(TIM_CR1_CEN);
+	TIM1->CNT = 0;
+
+	switching = 0;
+	TIM8->CR1 &= ~(TIM_CR1_CEN);
+	GPIOB->BSRR = GDT2_DIS_Pin | GDT1_DIS_Pin;
+}
+
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
+	if (fault != NOFAULT) {
+		PWMStop();
+	} else {
+		if (switching == 0) {
+			switching = GPIORead(INT_GPIO_Port, INT_Pin);
+			if (switching == 1) {
+				ocdside ^= 1;
+				PWMStart();
+			}
+		} else {
+			switching = GPIORead(INT_GPIO_Port, INT_Pin);
+		}
+		if (!switching) {
+			PWMStop();
+		}
+	}
+}
 
 void TIM1_CC_IRQHandler(void) {
     if (TIM1->SR & (1 << 1)) { // channel 1 - input capture
@@ -32,7 +72,7 @@ void TIM1_CC_IRQHandler(void) {
     		TIM1->ARR = capture;
 
     		TIM8->ARR = capture;
-    		TIM8->CCR1 = TIM1->CCR1;
+    		TIM8->CCR3 = TIM1->CCR1;
     	}
     }
     if (TIM1->SR & (1 << 2)) { // channel 2 - timing pwm

@@ -39,6 +39,7 @@ void FaultHandle() {
 		LEDSetBlinking(LED_I_IN, 1);
 		while (waiting) {
 			HAL_Delay(1);
+			stop();
 		}
 	}
 

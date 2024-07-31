@@ -85,12 +85,30 @@ uint8_t CMD_fault(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
 	}
 	if (!strcmp(args[0], "clear")) {
 		waiting = 0;
+		fault = NOFAULT;
 		return TERM_CMD_EXIT_SUCCESS;
 	}
 
 	ttprintf("Usage: fault [get/clear]");
 	return TERM_CMD_EXIT_SUCCESS;
 }
+
+uint8_t CMD_vbus(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
+	if (argCount != 1) {
+		ttprintf("Usage: vbus [voltage]");
+		return TERM_CMD_EXIT_SUCCESS;
+	}
+	int setpoint = atoi(args[0]);
+	if (setpoint < 10 || setpoint > GetValue(MAX_OUT_V)) {
+		ttprintf("Valid range: %i-%i", 10, GetValue(MAX_OUT_V));
+		return TERM_CMD_EXIT_SUCCESS;
+	}
+
+	vref = setpoint;
+	ttprintf("Usage: fault [get/clear]");
+	return TERM_CMD_EXIT_SUCCESS;
+}
+
 void addCommand(TermCommandFunction function, const char * command, const char * description){
 	TERM_addCommand(function, command, description, 0, &TERM_defaultList);
 }

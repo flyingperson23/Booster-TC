@@ -15,7 +15,7 @@ void SCRInit() {
 void SCRBlock() {
 	TIM20->CCR1 = SCR_MAX_DELAY;
 	TIM20->ARR = SCR_MAX_DELAY;
-	TIM20->CR1 ^= ~(TIM_CR1_CEN);
+	TIM20->CR1 &= ~(TIM_CR1_CEN);
 }
 
 void SCRIncrement() {

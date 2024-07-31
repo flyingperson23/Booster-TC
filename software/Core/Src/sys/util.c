@@ -23,7 +23,7 @@ void iconstrain(int * var, int min, int max) {
 }
 
 uint8_t GPIORead(GPIO_TypeDef * bank, uint16_t pin) {
-	return bank->IDR & pin;
+	return (bank->IDR & pin) != 0;
 }
 
 int AmpsToCounts(float amps) { // amps * 0.04 v/a * 4095 counts / 3.3v -> 0.04*4095/3.3=49.6363636364 counts/amp

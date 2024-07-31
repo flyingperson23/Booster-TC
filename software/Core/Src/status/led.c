@@ -34,15 +34,17 @@ void LEDSetBlinking(uint8_t LED, uint8_t on) {
 uint8_t blink_state = 0;
 
 void TIM7_DAC_IRQHandler(void) {
-	TIM7->SR = ~TIM_FLAG_UPDATE;
-	blink_state ^= 0xFF;
-	if (blinking & (1 << LED_VBUS)) {
-		TIM3->CCR1 = blink_state;
-	}
-	if (blinking & (1 << LED_TEMP)) {
-		TIM3->CCR2 = blink_state;
-	}
-	if (blinking & (1 << LED_I_IN)) {
-		TIM3->CCR3 = blink_state;
+	if ((TIM7->SR & TIM_FLAG_UPDATE) == TIM_FLAG_UPDATE) {
+		TIM7->SR = ~TIM_FLAG_UPDATE;
+		blink_state ^= 0xFF;
+		if (blinking & (1 << LED_VBUS)) {
+			TIM3->CCR1 = blink_state;
+		}
+		if (blinking & (1 << LED_TEMP)) {
+			TIM3->CCR2 = blink_state;
+		}
+		if (blinking & (1 << LED_I_IN)) {
+			TIM3->CCR3 = blink_state;
+		}
 	}
 }

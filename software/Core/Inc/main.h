@@ -92,8 +92,8 @@ void Error_Handler(void);
 #define SCR_GPIO_Port GPIOB
 #define VAC_SENSE_Pin GPIO_PIN_11
 #define VAC_SENSE_GPIO_Port GPIOB
-#define MODE_IN_Pin GPIO_PIN_12
-#define MODE_IN_GPIO_Port GPIOB
+#define THERM_BOARD_Pin GPIO_PIN_12
+#define THERM_BOARD_GPIO_Port GPIOB
 #define I_L_Pin GPIO_PIN_14
 #define I_L_GPIO_Port GPIOB
 #define VBUS_SENSE_Pin GPIO_PIN_8
@@ -104,6 +104,8 @@ void Error_Handler(void);
 #define DRIVE_EN_GPIO_Port GPIOA
 #define CS_DRIVE_Pin GPIO_PIN_11
 #define CS_DRIVE_GPIO_Port GPIOA
+#define MODE_IN_Pin GPIO_PIN_12
+#define MODE_IN_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
 #define TMS_GPIO_Port GPIOA
 #define TCK_Pin GPIO_PIN_14

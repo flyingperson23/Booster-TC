@@ -1,3 +1,6 @@
 ../Core/Src/power/pwm.c:10:6:PWMInit	1
-../Core/Src/power/pwm.c:26:6:TIM1_CC_IRQHandler	4
-../Core/Src/power/pwm.c:45:6:HAL_COMP_TriggerCallback	3
+../Core/Src/power/pwm.c:28:6:PWMStart	1
+../Core/Src/power/pwm.c:38:6:PWMStop	1
+../Core/Src/power/pwm.c:47:6:HAL_GPIO_EXTI_Callback	5
+../Core/Src/power/pwm.c:66:6:TIM1_CC_IRQHandler	4
+../Core/Src/power/pwm.c:85:6:HAL_COMP_TriggerCallback	3

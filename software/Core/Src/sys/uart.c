@@ -25,21 +25,22 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart) {
 }
 
 void printer(char * format, ...) {
+	if (mode == MODE_MANUAL) {
+		va_list arg;
+		va_start (arg, format);
 
-    va_list arg;
-    va_start (arg, format);
+		uint8_t * buff = (uint8_t*) malloc(256);
+		int length = vsprintf((char *)buff, format, arg);
 
-    uint8_t * buff = (uint8_t*) malloc(256);
-    int length = vsprintf((char *)buff, format, arg);
-
-    if (length > 256) {
-    	length = 256;
-    }
+		if (length > 256) {
+			length = 256;
+		}
 
 
-    HAL_UART_Transmit(&huart3, buff, length, 1000);
+		HAL_UART_Transmit(&huart3, buff, length, 1000);
 
-    free(buff);
+		free(buff);
 
-    va_end (arg);
+		va_end (arg);
+	}
 }
