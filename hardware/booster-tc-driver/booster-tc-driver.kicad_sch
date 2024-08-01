@@ -9324,12 +9324,6 @@
 		(uuid "02ea6be4-ecfe-488c-8266-2776f8df076b")
 	)
 	(junction
-		(at 238.76 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "03802792-dc70-4620-80e0-93a06db90985")
-	)
-	(junction
 		(at 43.18 184.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9552,12 +9546,6 @@
 		(uuid "443cb632-b325-4b32-8c5e-4056dbb72180")
 	)
 	(junction
-		(at 222.25 19.05)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "466c4ac3-0fba-4b93-aa29-8e0ac841d448")
-	)
-	(junction
 		(at 165.1 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9606,12 +9594,6 @@
 		(uuid "53a4165f-7e06-43d7-8f56-da77b7a6a7cb")
 	)
 	(junction
-		(at 132.08 27.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54ddb10f-61c6-4190-bdac-e113acfd63da")
-	)
-	(junction
 		(at 77.47 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9634,12 +9616,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "616c3916-19c6-4218-8f55-4125d454cbde")
-	)
-	(junction
-		(at 222.25 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "63d8c25a-9d2d-406c-b6c5-2a9250808b90")
 	)
 	(junction
 		(at 273.05 121.92)
@@ -9714,10 +9690,10 @@
 		(uuid "7c4b9628-7efc-454c-8ac5-38e8289a792f")
 	)
 	(junction
-		(at 238.76 151.13)
+		(at 132.08 27.94)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7e4cd0ab-218b-4929-9086-7bbec57ea0d3")
+		(uuid "7e0a36e8-a75e-4175-ba40-8dd3b8370398")
 	)
 	(junction
 		(at 266.7 31.75)
@@ -9868,12 +9844,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "af10fafc-edf8-4b2c-af97-4bb2c29ddf63")
-	)
-	(junction
-		(at 231.14 143.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b694525a-b033-44c2-be76-5f249f7c6d26")
 	)
 	(junction
 		(at 144.78 101.6)
@@ -10505,7 +10475,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 143.51) (xy 238.76 143.51)
+			(xy 234.95 143.51) (xy 242.57 143.51)
 		)
 		(stroke
 			(width 0)
@@ -10855,6 +10825,16 @@
 	)
 	(wire
 		(pts
+			(xy 124.46 27.94) (xy 132.08 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d0ecbb9-0e32-4e9a-a0e9-e92fd039f18e")
+	)
+	(wire
+		(pts
 			(xy 43.18 184.15) (xy 22.86 184.15)
 		)
 		(stroke
@@ -11035,16 +11015,6 @@
 	)
 	(wire
 		(pts
-			(xy 238.76 151.13) (xy 242.57 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6d70980a-d429-48f7-8835-0bea47b0764d")
-	)
-	(wire
-		(pts
 			(xy 139.7 185.42) (xy 148.59 185.42)
 		)
 		(stroke
@@ -11122,16 +11092,6 @@
 			(type default)
 		)
 		(uuid "77d7b69b-fb7e-4e79-9293-ec4fc90b8e70")
-	)
-	(wire
-		(pts
-			(xy 238.76 143.51) (xy 242.57 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "786e9278-ad9a-4f42-990d-8d49045f467c")
 	)
 	(wire
 		(pts
@@ -11325,7 +11285,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 151.13) (xy 238.76 151.13)
+			(xy 234.95 151.13) (xy 242.57 151.13)
 		)
 		(stroke
 			(width 0)
@@ -11335,7 +11295,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 143.51) (xy 231.14 143.51)
+			(xy 224.79 143.51) (xy 234.95 143.51)
 		)
 		(stroke
 			(width 0)
@@ -11635,16 +11595,6 @@
 	)
 	(wire
 		(pts
-			(xy 231.14 143.51) (xy 234.95 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b637cef0-3bc8-4a0a-9c4e-efef0a9f00db")
-	)
-	(wire
-		(pts
 			(xy 17.78 173.99) (xy 22.86 173.99)
 		)
 		(stroke
@@ -11655,23 +11605,13 @@
 	)
 	(wire
 		(pts
-			(xy 222.25 26.67) (xy 227.33 26.67)
+			(xy 215.9 26.67) (xy 227.33 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "b6d3b19a-8d2f-4a31-84a8-141bacb83e5f")
-	)
-	(wire
-		(pts
-			(xy 124.46 27.94) (xy 132.08 27.94)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b70cdc62-4bef-4a0a-981f-9cecfaf49732")
 	)
 	(wire
 		(pts
@@ -12222,16 +12162,6 @@
 			(type default)
 		)
 		(uuid "fc4b68da-d10b-4fd9-aa47-5234e37d8b81")
-	)
-	(wire
-		(pts
-			(xy 215.9 26.67) (xy 222.25 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd87d499-1583-4684-ac81-bfe7bcd6b372")
 	)
 	(wire
 		(pts
@@ -14944,75 +14874,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:L")
-		(at 182.88 120.65 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "07b533d9-a771-47ad-bff3-0426060cd64a")
-		(property "Reference" "L1"
-			(at 182.88 115.57 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22u SRP7028A-220M"
-			(at 182.88 118.11 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Library:INDPM7366X300N"
-			(at 182.88 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 182.88 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 182.88 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "75d353ee-c4f5-4269-8bc8-10a4870e06c8")
-		)
-		(pin "1"
-			(uuid "2ae2f08a-ab60-4550-83b2-79743b7a9f07")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "L1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 234.95 147.32 0)
 		(unit 1)
@@ -16697,7 +16558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Murata_DFE201610P"
+		(property "Footprint" "Library:LQM2MPN4R7NG0L"
 			(at 262.89 121.92 0)
 			(effects
 				(font
@@ -18419,7 +18280,7 @@
 	)
 	(symbol
 		(lib_id "New_Library:3-647166-2")
-		(at 124.46 27.94 180)
+		(at 104.14 27.94 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -18427,7 +18288,7 @@
 		(dnp no)
 		(uuid "305e5302-6f85-4520-b1b9-3d82afdb9977")
 		(property "Reference" "J8"
-			(at 113.0299 20.32 90)
+			(at 115.5701 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18436,7 +18297,7 @@
 			)
 		)
 		(property "Value" "3-647166-2"
-			(at 115.5699 24.13 90)
+			(at 113.0301 31.75 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18445,7 +18306,7 @@
 			)
 		)
 		(property "Footprint" "Library:36471662"
-			(at 107.95 -66.98 0)
+			(at 120.65 122.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18455,7 +18316,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F647166%7FR1%7Fpdf%7FEnglish%7FENG_CD_647166_R1.pdf%7F3-647166-2"
-			(at 107.95 -166.98 0)
+			(at 120.65 222.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18465,7 +18326,7 @@
 			)
 		)
 		(property "Description" "Headers & Wire Housings HDR 1X02P VRT T/H"
-			(at 124.46 27.94 0)
+			(at 104.14 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18474,7 +18335,7 @@
 			)
 		)
 		(property "Height" "10.66"
-			(at 107.95 -366.98 0)
+			(at 120.65 422.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18484,7 +18345,7 @@
 			)
 		)
 		(property "Mouser Part Number" "571-3-647166-2"
-			(at 107.95 -466.98 0)
+			(at 120.65 522.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18494,7 +18355,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/3-647166-2?qs=xsTFCgGnzbJU1qz6Np9kzA%3D%3D"
-			(at 107.95 -566.98 0)
+			(at 120.65 622.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18504,7 +18365,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 107.95 -666.98 0)
+			(at 120.65 722.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18514,7 +18375,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "3-647166-2"
-			(at 107.95 -766.98 0)
+			(at 120.65 822.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19531,6 +19392,145 @@
 	)
 	(symbol
 		(lib_id "Device:C")
+		(at 40.64 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "42548074-1a32-4e0e-a0e9-109acb3d583e")
+		(property "Reference" "C68"
+			(at 37.338 133.35 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u C1206C105K5RACTU"
+			(at 44.45 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
+			(at 41.6052 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 40.64 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fb6968d3-44c9-4ec5-8bb7-b25d3e5a39af")
+		)
+		(pin "2"
+			(uuid "2f4872ba-3805-4339-b49e-6e03c5462bc4")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "C68")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 270.51 31.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "426def47-7948-4e00-b4c0-0f8e5dcda5b1")
+		(property "Reference" "L3"
+			(at 270.51 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22u IHLP3232DZER220M5A"
+			(at 270.51 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Library:IND_IHLP-3232DZ_VIS-M"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 270.51 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "520a1499-5171-4bfd-9182-358b36b5cd24")
+		)
+		(pin "1"
+			(uuid "c3835d28-a00a-4567-b657-2aabde458435")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "L3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
 		(at 110.49 62.23 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -19795,6 +19795,75 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR029")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:L")
+		(at 182.88 120.65 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4733de09-d85a-4c6b-8cd8-9a86f7496c99")
+		(property "Reference" "L1"
+			(at 182.88 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22u IHLP3232DZER220M5A"
+			(at 182.88 118.11 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Library:IND_IHLP-3232DZ_VIS-M"
+			(at 182.88 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 182.88 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Inductor"
+			(at 182.88 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "440d91e3-6530-49b4-8fb6-34d5785535ed")
+		)
+		(pin "1"
+			(uuid "21401cba-2cea-4e70-9b02-405a6439a32f")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "L1")
 					(unit 1)
 				)
 			)
@@ -21018,7 +21087,7 @@
 	)
 	(symbol
 		(lib_id "New_Library:3-647166-2")
-		(at 185.42 43.18 90)
+		(at 185.42 22.86 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -21026,7 +21095,7 @@
 		(dnp no)
 		(uuid "584e46a9-9f08-4a47-82aa-9f043fb6956e")
 		(property "Reference" "J10"
-			(at 193.04 31.7499 90)
+			(at 177.8 34.2901 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21035,7 +21104,7 @@
 			)
 		)
 		(property "Value" "3-647166-2"
-			(at 189.23 34.2899 90)
+			(at 181.61 31.7501 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21044,7 +21113,7 @@
 			)
 		)
 		(property "Footprint" "Library:36471662"
-			(at 280.34 26.67 0)
+			(at 90.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21054,7 +21123,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F647166%7FR1%7Fpdf%7FEnglish%7FENG_CD_647166_R1.pdf%7F3-647166-2"
-			(at 380.34 26.67 0)
+			(at -9.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21064,7 +21133,7 @@
 			)
 		)
 		(property "Description" "Headers & Wire Housings HDR 1X02P VRT T/H"
-			(at 185.42 43.18 0)
+			(at 185.42 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21073,7 +21142,7 @@
 			)
 		)
 		(property "Height" "10.66"
-			(at 580.34 26.67 0)
+			(at -209.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21083,7 +21152,7 @@
 			)
 		)
 		(property "Mouser Part Number" "571-3-647166-2"
-			(at 680.34 26.67 0)
+			(at -309.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21093,7 +21162,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/3-647166-2?qs=xsTFCgGnzbJU1qz6Np9kzA%3D%3D"
-			(at 780.34 26.67 0)
+			(at -409.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21103,7 +21172,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "TE Connectivity"
-			(at 880.34 26.67 0)
+			(at -509.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -21113,7 +21182,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "3-647166-2"
-			(at 980.34 26.67 0)
+			(at -609.5 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -22716,76 +22785,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 222.25 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6f935638-b2db-4d4f-80b3-533729cfe9aa")
-		(property "Reference" "C24"
-			(at 219.964 19.812 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" ".1uf 885012208087"
-			(at 226.06 24.1299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
-			(at 223.2152 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 222.25 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 222.25 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "56686fc5-272f-46c4-820b-e75f1c0934c9")
-		)
-		(pin "2"
-			(uuid "5a23be4d-2c17-4439-bcf4-90facff6b74e")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "C24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "dk_Rectangular-Connectors-Headers-Male-Pins:22-23-2021")
 		(at 52.07 139.7 90)
 		(unit 1)
@@ -24295,7 +24294,7 @@
 				)
 			)
 		)
-		(property "Value" "22u SRP7028A-220M"
+		(property "Value" "22u IHLP3232DZER220M5A"
 			(at 266.7 74.93 90)
 			(effects
 				(font
@@ -24304,7 +24303,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Library:INDPM7366X300N"
+		(property "Footprint" "Library:IND_IHLP-3232DZ_VIS-M"
 			(at 266.7 77.47 0)
 			(effects
 				(font
@@ -25403,76 +25402,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR0104")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 238.76 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "917df9ff-2d8f-478d-9df4-1d827200f4d9")
-		(property "Reference" "C5"
-			(at 238.76 143.256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2u2 C3225X7R1H225K250AB"
-			(at 242.57 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 239.7252 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 238.76 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 238.76 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "fcc6e535-9d4a-4aef-a49c-27f61f4d829f")
-		)
-		(pin "2"
-			(uuid "ef921ba4-67ad-4879-95f4-794bb27d0d0b")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -27850,76 +27779,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 40.64 132.08 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b78ccf64-ada5-4906-93ee-41668e19581b")
-		(property "Reference" "C68"
-			(at 37.592 133.858 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10n VJ0603Y103KXJAC31X"
-			(at 44.45 133.3499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 41.6052 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 40.64 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 40.64 132.08 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0c44c8c0-641c-4d41-aaf2-6bbcaa48ffbe")
-		)
-		(pin "2"
-			(uuid "a1176010-69da-46d4-97cf-5152b5cf640d")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "C68")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 229.87 55.88 270)
 		(unit 1)
@@ -28188,75 +28047,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR0105")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:L")
-		(at 270.51 31.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bc15ad97-8290-4c02-9f73-c3de70711b6d")
-		(property "Reference" "L4"
-			(at 270.51 26.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22u SRP7028A-220M"
-			(at 270.51 29.21 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Library:INDPM7366X300N"
-			(at 270.51 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 270.51 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Inductor"
-			(at 270.51 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "85e52329-d44d-4548-a18f-e2965a9d2e9f")
-		)
-		(pin "1"
-			(uuid "9d1e2d85-1d56-42e3-a750-79f5e0498ff9")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "L4")
 					(unit 1)
 				)
 			)
@@ -32890,76 +32680,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 231.14 147.32 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fe68dbcf-8c42-45bd-8a6c-8b1b01b95604")
-		(property "Reference" "C46"
-			(at 231.14 143.256 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "2u2 C3225X7R1H225K250AB"
-			(at 234.95 148.5899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
-			(at 232.1052 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 231.14 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 231.14 147.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "24db1b3d-a1b9-4290-86c4-c7d662d9bfdb")
-		)
-		(pin "2"
-			(uuid "a8c21916-1ee7-4dc3-b5f2-380d919b48bd")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "C46")
 					(unit 1)
 				)
 			)
