@@ -4339,7 +4339,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal"
+		(property "Footprint" "Library:USB_B_OST_USB-B1HSxx_Horizontal"
 			(at 29.21 86.36 0)
 			(effects
 				(font
