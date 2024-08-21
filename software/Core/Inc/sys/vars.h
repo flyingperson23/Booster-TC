@@ -31,7 +31,7 @@ int64_t GetValue(uint8_t index);
 
 #define MEMORY_START 0x08000000
 
-#define NUM_VARS 5
+#define NUM_VARS 11
 
 #define MAX_PRI_I 0
 #define MAX_AC_I 1
@@ -43,6 +43,7 @@ int64_t GetValue(uint8_t index);
 #define RAMP_START 7
 #define RAMP_END 8
 #define AUTORESET_TIME 9
+#define UVLO 10
 
 
 #endif /* INC_VARS_H_ */

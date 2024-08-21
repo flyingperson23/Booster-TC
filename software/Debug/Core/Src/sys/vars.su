@@ -1,9 +1,9 @@
 ../Core/Src/sys/vars.c:19:6:AddVars	32	static
-../Core/Src/sys/vars.c:32:6:AddVar	32	static
-../Core/Src/sys/vars.c:43:7:GetVar	16	static
-../Core/Src/sys/vars.c:47:9:GetValue	16	static
-../Core/Src/sys/vars.c:51:8:GetIndex	24	static
-../Core/Src/sys/vars.c:60:6:FillVars	16	static
-../Core/Src/sys/vars.c:67:6:WriteVars	16	static
-../Core/Src/sys/vars.c:74:6:Flash_Read_Data	24	static
-../Core/Src/sys/vars.c:87:6:Flash_Write_Data	32	static
+../Core/Src/sys/vars.c:33:6:AddVar	32	static
+../Core/Src/sys/vars.c:44:7:GetVar	16	static
+../Core/Src/sys/vars.c:48:9:GetValue	16	static
+../Core/Src/sys/vars.c:52:8:GetIndex	24	static
+../Core/Src/sys/vars.c:61:6:FillVars	16	static
+../Core/Src/sys/vars.c:68:6:WriteVars	16	static
+../Core/Src/sys/vars.c:75:6:Flash_Read_Data	24	static
+../Core/Src/sys/vars.c:88:6:Flash_Write_Data	32	static

@@ -10,12 +10,19 @@
 uint8_t power_state = STATE_OFF;
 uint8_t mode = MODE_AUTO;
 
-uint32_t temp_buffer[3] = {0, 0, 0};
+uint32_t temp_buffer[4] = {0, 0, 0, 0};
 float temps[3] = {0.0f, 0.0f, 0.0f};
+float V24_sense = 24.0f;
+uint32_t vrefint_adc = 3600;
+
+StructAvg VAC_avg;
+StructAvg IAC_avg;
+StructAvg VBUS_avg;
 
 void stop() {
 	SCRBlock();
 	PWMStop();
+	BoostDisable();
 	// fill this in
 }
 
@@ -29,8 +36,13 @@ void booster_init() {
 	SCRInit();
 	PWMInit();
 
+	InitAvg(&VAC_avg);
+	InitAvg(&IAC_avg);
+	InitAvg(&VBUS_avg);
+
 	HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED);
-	HAL_ADC_Start_DMA(&hadc1, temp_buffer, 3);
+	HAL_ADC_Start_DMA(&hadc1, temp_buffer, 4);
+	HAL_DMA_RegisterCallback(&hdma_adc1, HAL_DMA_XFER_CPLT_CB_ID, &DMATransferComplete_adc1);
 
 	HAL_DAC_Start(&hdac2, DAC_CHANNEL_1);
 	HAL_DAC_Start(&hdac3, DAC_CHANNEL_1);
@@ -49,25 +61,26 @@ void booster_loop() {
 
 }
 
-float a = 1;
-float b = 1;
-float c = 1; //// need to get these for therm!!!!!!!!!!!!!
+double b = 3950;
 
-
-void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim) {
-
-}
-
-void TIM6_DAC_IRQHandler(void) {
-	if ((TIM6->SR & TIM_FLAG_UPDATE) == TIM_FLAG_UPDATE) {
-		TIM6->SR = ~TIM_FLAG_UPDATE;
+void DMATransferComplete_adc1(DMA_HandleTypeDef *_hdma) {
+	if (_hdma == &hdma_adc1) {
+		vrefint_adc = temps[3];
 		for (int i = 0; i < 2; i++) {
 			if (temp_buffer[i] != 0) {
-				float R = 10000*CountsToVolts(temps[i]) / (2.9f - CountsToVolts(temps[i]));
-				temps[i] = 1.0f / (a + b * log(R) + c * log(R) * log(R) * log(R)) - 273.15f;
+				double a = ((double) temp_buffer[i]) / (vrefint_adc - ((double)temp_buffer[i]));
+				if (a != 0) {
+					double b = (log(a) / b) + (1.0 / 298.15);
+					double c = (1.0 / b) - 273.15;
+					temps[i] = (float) c;
+				}
 			}
 		}
-		// third temp
+		// third temp - V = T_0 + T_C * T
+		// T = (V - T_0) / T_C
+		// T_0 = 500mV, T_C = 10 mV/C
+		float V = temp_buffer[2] * 3.3f / 4096.0;
+		temps[2] = (V - 0.5f) / 0.01f;
 		background_loop();
 	}
 }
@@ -75,7 +88,26 @@ void TIM6_DAC_IRQHandler(void) {
 uint32_t scr_counter = 0;
 void background_loop() {
 
-	// get 24v sense from adc3
+	AvgInput(&VAC_avg, vac_rms);
+	AvgInput(&IAC_avg, FilterIRMS.y[0]);
+	AvgInput(&VBUS_avg, vbus);
+
+	AvgCalculate(&IAC_avg);
+	AvgCalculate(&VBUS_avg);
+
+	if (temps[0] > GetValue(MAX_TEMP) || temps[1] > GetValue(MAX_TEMP) || temps[2] > GetValue(MAX_TEMP)) {
+		fault |= FAULT_TEMP;
+		FaultHandle();
+	}
+
+    HAL_ADC_Start(&hadc3);
+    HAL_ADC_PollForConversion(&hadc3, HAL_MAX_DELAY);
+    V24_sense = HAL_ADC_GetValue(&hadc3) * 3.3f / 4096.0f;
+
+    if (V24_sense < GetValue(UVLO)) {
+    	fault |= FAULT_UVLO;
+    	FaultHandle();
+    }
 
 	HAL_GPIO_EXTI_Callback(INT_Pin); // make sure we have the right int signal
 
@@ -117,13 +149,15 @@ void background_loop() {
 	HAL_DAC_SetValue(&hdac2, DAC_CHANNEL_1, DAC_ALIGN_12B_R, dac_counts);
 
 	mode = GPIORead(MODE_IN_GPIO_Port, MODE_IN_Pin);
+
 	if (fault == NOFAULT) {
 
-		if (vbus < 50) {
+		// maybe check for uvlo fault?
+		if (VBUS_avg.out < 50) {
 			LEDSetBlinking(LED_VBUS, 1);
 		} else {
 			LEDSetBlinking(LED_VBUS, 0);
-			float vbusled = 255.0f * vbus / ((float) GetValue(MAX_OUT_V));
+			float vbusled = 255.0f * VBUS_avg.out / ((float) GetValue(MAX_OUT_V));
 			fconstrain(&vbusled, 0.0f, 255.0f);
 			LEDSetValue(LED_VBUS, (uint8_t) vbusled);
 		}
@@ -137,22 +171,25 @@ void background_loop() {
 			LEDSetValue(LED_TEMP, (uint8_t) templed);
 		}
 
-		// get rms current draw
-
-		if (temps[0] > GetValue(MAX_TEMP) || temps[1] > GetValue(MAX_TEMP)) {
-			fault |= FAULT_TEMP;
-			FaultHandle();
+		if (IAC_avg.out > 0.9f * GetValue(MAX_AC_I)) {
+			LEDSetBlinking(LED_I_IN, 1);
+		} else {
+			LEDSetBlinking(LED_I_IN, 0);
+			float iled = 255.0f * IAC_avg.out / (0.9 * GetValue(MAX_AC_I));
+			fconstrain(&iled, 0.0f, 255.0f);
+			LEDSetValue(LED_I_IN, (uint8_t) iled);
 		}
+
 		if (mode == MODE_AUTO) {
 			vref = 400;
 			if (power_state == STATE_OFF) {
 				power_state = STATE_SCR;
 				SCRBlock();
-				// disable boost timer
+				BoostDisable();
 			}
 			if (power_state == STATE_SCR) {
 
-				//disable boost timer
+				BoostDisable();
 				scr_counter = (scr_counter + 1) % 100;
 				if (scr_counter == 0) {
 					SCRIncrement();
@@ -164,6 +201,7 @@ void background_loop() {
 			}
 			if (power_state == STATE_BOOST) {
 				SCRBypass();
+				BoostEnable();
 			}
 		} else if (mode == MODE_MANUAL) {
 

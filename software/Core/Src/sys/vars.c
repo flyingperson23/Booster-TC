@@ -27,6 +27,7 @@ void AddVars() {
 	AddVar("vdrive", 22, "V", VDRIVE, 10, 22);
 	AddVar("fan_ramp_start", 35, "C", RAMP_START, 0, 200);
 	AddVar("fan_ramp_end", 50, "C", RAMP_END, 0, 200);
+	AddVar("UVLO", 16, "V", UVLO, 0, 24);
 }
 
 void AddVar(char * name, int64_t default_value, char * suffix, uint8_t index, int64_t min, int64_t max) {

@@ -21,5 +21,6 @@ extern uint8_t waiting;
 #define FAULT_OC 1
 #define FAULT_OV 2
 #define FAULT_TEMP 4
+#define FAULT_UVLO 5
 
 #endif /* INC_SYS_FAULT_H_ */

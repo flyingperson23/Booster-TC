@@ -10,6 +10,15 @@
 Var * tempVar;
 int tempInt;
 
+uint8_t CMD_telem(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
+	ttprintf("Bus Voltage: %fVdc\r\n", AvgCalculate(&VBUS_avg));
+	ttprintf("Line Voltage: %fVac\r\n", AvgCalculate(&VAC_avg));
+	ttprintf("Line Current: %fA\r\n", AvgCalculate(&IAC_avg));
+	ttprintf("Temps: %fC, %fC, %fC\r\n", temps[0], temps[1], temps[2]);
+	ttprintf("Driver Input: %fVdc\r\n", V24_sense);
+	return TERM_CMD_EXIT_SUCCESS;
+}
+
 uint8_t CMD_get(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
 	if (argCount == 0) {
 		for (int i = 0; i < NUM_VARS; i++) {
@@ -72,13 +81,16 @@ uint8_t CMD_fault(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args) {
 			ttprintf("No faults active");
 		} else {
 			if (fault & FAULT_OC) {
-				ttprintf("Input current of %f above limit of %i", I_L, GetValue(MAX_I_L));
+				ttprintf("Input current of %f above limit of %i\r\n", I_L, GetValue(MAX_I_L));
 			}
 			if (fault & FAULT_OV) {
-				ttprintf("Bus voltage of %f above limit of %i", vbus, GetValue(MAX_OUT_V));
+				ttprintf("Bus voltage of %f above limit of %i\r\n", vbus, GetValue(MAX_OUT_V));
 			}
 			if (fault & FAULT_TEMP) {
-				ttprintf("One or more of temps (%f, %f, %f) above limit of %i", temps[0], temps[1], temps[2], GetValue(MAX_TEMP));
+				ttprintf("One or more of temps (%f, %f, %f) above limit of %i\r\n", temps[0], temps[1], temps[2], GetValue(MAX_TEMP));
+			}
+			if (fault & FAULT_UVLO) {
+				ttprintf("Input voltage %f less than minimum of %i\r\n", V24_sense, GetValue(UVLO));
 			}
 		}
 		return TERM_CMD_EXIT_SUCCESS;
@@ -117,4 +129,5 @@ void CmdsInit(){
 	addCommand(CMD_get, "get", "Gets a variable");
 	addCommand(CMD_set, "set", "Sets a variable");
 	addCommand(CMD_fault, "fault", "Views/clears faults");
+	addCommand(CMD_telem, "telem", "Gets telemetry");
 }

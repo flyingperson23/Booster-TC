@@ -6,3 +6,6 @@
 ../Core/Src/sys/util.c:33:7:CountsToAmps	1
 ../Core/Src/sys/util.c:37:7:CountsToVolts	1
 ../Core/Src/sys/util.c:41:5:VoltsToCounts	1
+../Core/Src/sys/util.c:45:6:InitAvg	2
+../Core/Src/sys/util.c:54:6:AvgInput	3
+../Core/Src/sys/util.c:66:7:AvgCalculate	2

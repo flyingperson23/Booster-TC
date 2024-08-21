@@ -23,4 +23,16 @@ float CountsToAmps(int counts);
 float CountsToVolts(int counts); // for general adc
 int VoltsToCounts(float volts);
 
+#define AVG_LEN 32
+typedef struct {
+	float values[AVG_LEN];
+	float out;
+	uint8_t counter;
+	uint8_t first_value;
+} StructAvg;
+
+void InitAvg(StructAvg *avg);
+void AvgInput(StructAvg *avg, float value);
+float AvgCalculate(StructAvg *avg);
+
 #endif /* INC_SYS_UTIL_H_ */

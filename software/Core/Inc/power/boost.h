@@ -57,16 +57,26 @@ void Reset2p2zFilter(Filter2p2z * filter);
 extern Filter2p2z CompensatorV;
 extern Filter2p2z CompensatorI;
 extern Filter2p2z FilterVFF;
+extern Filter2p2z FilterIRMS;
 
-extern uint32_t vref;
+extern uint32_t vref; // voltage setpoint for booster
 extern float VInv_rms;
 extern float VInvSq_rms;
 extern float I_rq;
 extern float vbus;
 extern float I_L;
+extern float vac_rms;
+extern uint8_t enabled;
 
 void BoostInit();
-void BoostSlowLoop(float vbus, float vac);
-void BoostFastLoop(float vac, float I_L);
+void BoostSlowLoop();
+void BoostFastLoop();
+void BoostDisable();
+void BoostEnable();
+
+void DMATransferComplete_adc2(DMA_HandleTypeDef *hdma);
+void DMATransferComplete_adc4(DMA_HandleTypeDef *hdma);
+void DMATransferComplete_adc5(DMA_HandleTypeDef *hdma);
+
 
 #endif /* INC_BOOST_H_ */

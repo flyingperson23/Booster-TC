@@ -21,6 +21,7 @@
 
 void CmdsInit();
 
+uint8_t CMD_telem(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args);
 uint8_t CMD_get(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args);
 uint8_t CMD_set(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args);
 uint8_t CMD_fault(TERMINAL_HANDLE * handle, uint8_t argCount, char ** args);

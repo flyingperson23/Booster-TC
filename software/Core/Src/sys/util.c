@@ -41,3 +41,34 @@ float CountsToVolts(int counts) {
 int VoltsToCounts(float volts) {
 	return (int) (volts * 4095.0f / 3.3f);
 }
+
+void InitAvg(StructAvg *avg) {
+	for (int i = 0; i < AVG_LEN; i++) {
+		avg->values[i] = 0;
+	}
+	avg->counter = 0;
+	avg->out = 0;
+	avg->first_value = 1;
+}
+
+void AvgInput(StructAvg *avg, float value) {
+	avg->counter = (avg->counter + 1) % AVG_LEN;
+	if (avg->first_value == 1) {
+		for (int i = 0; i < AVG_LEN; i++) {
+			avg->values[i] = value;
+		}
+		avg->first_value = 0;
+	} else {
+		avg->values[avg->counter] = value;
+	}
+}
+
+float AvgCalculate(StructAvg *avg) {
+	float sum = 0;
+	for (int i = 0; i < AVG_LEN; i++) {
+		sum += avg->values[i];
+	}
+	sum /= AVG_LEN;
+	avg->out = sum;
+	return sum;
+}

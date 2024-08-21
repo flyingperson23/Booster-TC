@@ -13,9 +13,9 @@
 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:828:13:HAL_DACEx_ErrorCallbackCh2	16	static
 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:844:13:HAL_DACEx_DMAUnderrunCallbackCh2	16	static
 ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:871:19:HAL_DACEx_SelfCalibrate	48	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1002:19:HAL_DACEx_SetUserTrimming	32	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1047:10:HAL_DACEx_GetTrimOffset	16	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1081:10:HAL_DACEx_DualGetValue	24	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1114:6:DAC_DMAConvCpltCh2	24	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1133:6:DAC_DMAHalfConvCpltCh2	24	static
-../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1150:6:DAC_DMAErrorCh2	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1006:19:HAL_DACEx_SetUserTrimming	32	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1050:10:HAL_DACEx_GetTrimOffset	16	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1084:10:HAL_DACEx_DualGetValue	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1117:6:DAC_DMAConvCpltCh2	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1136:6:DAC_DMAHalfConvCpltCh2	24	static
+../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_dac_ex.c:1153:6:DAC_DMAErrorCh2	24	static

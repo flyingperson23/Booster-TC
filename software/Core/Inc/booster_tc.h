@@ -38,5 +38,13 @@ extern uint8_t mode;
 #define MODE_MANUAL 1
 
 extern float temps[3];
+extern float V24_sense;
+extern uint32_t vrefint_adc;
+
+extern StructAvg VAC_avg;
+extern StructAvg IAC_avg;
+extern StructAvg VBUS_avg;
+
+void DMATransferComplete_adc1(DMA_HandleTypeDef *_hdma);
 
 #endif /* INC_BOOSTER_TC_H_ */
