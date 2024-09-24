@@ -61,7 +61,7 @@ void booster_loop() {
 
 }
 
-double b = 3950;
+double beta[2] = {3950, 3950};
 
 void DMATransferComplete_adc1(DMA_HandleTypeDef *_hdma) {
 	if (_hdma == &hdma_adc1) {
@@ -70,7 +70,7 @@ void DMATransferComplete_adc1(DMA_HandleTypeDef *_hdma) {
 			if (temp_buffer[i] != 0) {
 				double a = ((double) temp_buffer[i]) / (vrefint_adc - ((double)temp_buffer[i]));
 				if (a != 0) {
-					double b = (log(a) / b) + (1.0 / 298.15);
+					double b = (log(a) / beta[i]) + (1.0 / 298.15);
 					double c = (1.0 / b) - 273.15;
 					temps[i] = (float) c;
 				}
@@ -152,7 +152,6 @@ void background_loop() {
 
 	if (fault == NOFAULT) {
 
-		// maybe check for uvlo fault?
 		if (VBUS_avg.out < 50) {
 			LEDSetBlinking(LED_VBUS, 1);
 		} else {

@@ -1335,7 +1335,7 @@ static void MX_TIM8_Init(void)
   sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_DISABLE;
   sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
   sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
-  sBreakDeadTimeConfig.DeadTime = 0;
+  sBreakDeadTimeConfig.DeadTime = 9;
   sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
   sBreakDeadTimeConfig.BreakPolarity = TIM_BREAKPOLARITY_HIGH;
   sBreakDeadTimeConfig.BreakFilter = 0;
@@ -1378,7 +1378,7 @@ static void MX_TIM20_Init(void)
 
   /* USER CODE END TIM20_Init 1 */
   htim20.Instance = TIM20;
-  htim20.Init.Prescaler = 0;
+  htim20.Init.Prescaler = 170;
   htim20.Init.CounterMode = TIM_COUNTERMODE_UP;
   htim20.Init.Period = 65535;
   htim20.Init.ClockDivision = TIM_CLOCKDIVISION_DIV1;

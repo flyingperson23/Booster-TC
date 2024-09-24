@@ -14,8 +14,8 @@
 #include "main.h"
 #include "sys/util.h"
 
-#define SCR_PULSE_LENGTH 50
-#define SCR_MAX_DELAY 1000
+#define SCR_PULSE_LENGTH 50 // TIM20 prescaler = 170 -> values in us
+#define SCR_MAX_DELAY 8333
 #define SCR_MIN_DELAY 10
 #define SCR_STEP (SCR_MAX_DELAY - SCR_MIN_DELAY) / 100
 

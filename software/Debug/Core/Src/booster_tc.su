@@ -1,5 +1,5 @@
 ../Core/Src/booster_tc.c:22:6:stop	8	static
 ../Core/Src/booster_tc.c:29:6:booster_init	8	static
 ../Core/Src/booster_tc.c:60:6:booster_loop	4	static
-../Core/Src/booster_tc.c:66:6:DMATransferComplete_adc1	72	static
+../Core/Src/booster_tc.c:66:6:DMATransferComplete_adc1	64	static
 ../Core/Src/booster_tc.c:89:6:background_loop	80	static
