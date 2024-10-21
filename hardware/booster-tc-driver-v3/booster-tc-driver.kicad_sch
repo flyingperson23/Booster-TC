@@ -5116,6 +5116,211 @@
 				)
 			)
 		)
+		(symbol "New_Library:3-647166-5"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 16.51 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "3-647166-5"
+				(at 16.51 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "36471665"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F647166%7FR2%7Fpdf%7FEnglish%7FENG_CD_647166_R2.pdf%7F3-647166-5"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "MTA-100,Vertical Pin Header,5way"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "10.66"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "571-3-647166-5"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/3-647166-5?qs=xsTFCgGnzbLW5KrzNUDo5w%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "TE Connectivity"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "3-647166-5"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "3-647166-5_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 15.24 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 0 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "New_Library:ACM7060-701-2PL-TL01"
 			(pin_names
 				(offset 0.254)
@@ -9217,6 +9422,12 @@
 		(uuid "2fee6fbc-7828-4a06-844b-794a0aa99dd8")
 	)
 	(junction
+		(at 208.28 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "301aff1d-fec6-4148-9872-51242897d312")
+	)
+	(junction
 		(at 83.82 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9307,12 +9518,6 @@
 		(uuid "53509184-5569-4c00-894c-64e98fa83403")
 	)
 	(junction
-		(at 208.28 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5464ef54-bacc-45fc-9d7d-3c0ea7261500")
-	)
-	(junction
 		(at 36.83 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9365,6 +9570,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "77a34615-1a32-4f2a-86be-36505ac57abc")
+	)
+	(junction
+		(at 208.28 24.13)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "77a39c51-3945-4781-b177-16af0d0860cc")
 	)
 	(junction
 		(at 15.24 22.86)
@@ -9511,12 +9722,6 @@
 		(uuid "ac887c6a-48b9-465e-9f7a-2befbf1fb5fe")
 	)
 	(junction
-		(at 208.28 21.59)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b456967c-d588-4595-bcc6-bd340c1ba5ff")
-	)
-	(junction
 		(at 144.78 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -9659,6 +9864,16 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb8bcc8c-1447-405c-8fac-c8567f53d42c")
+	)
+	(wire
+		(pts
+			(xy 208.28 21.59) (xy 208.28 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0134beb2-1d69-49d4-b65f-71cd4399091e")
 	)
 	(wire
 		(pts
@@ -9902,6 +10117,16 @@
 	)
 	(wire
 		(pts
+			(xy 173.99 30.48) (xy 173.99 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e73b0f6-2166-4fdf-8033-6d019d54a75d")
+	)
+	(wire
+		(pts
 			(xy 224.79 158.75) (xy 231.14 158.75)
 		)
 		(stroke
@@ -10132,6 +10357,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 33.02) (xy 187.96 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59e0663c-62b9-4851-b5c5-767dd4557279")
+	)
+	(wire
+		(pts
 			(xy 39.37 181.61) (xy 46.99 181.61)
 		)
 		(stroke
@@ -10189,6 +10424,16 @@
 			(type default)
 		)
 		(uuid "607bf378-36a1-4651-b711-38d56f129efc")
+	)
+	(wire
+		(pts
+			(xy 173.99 24.13) (xy 208.28 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "60d3c27b-f141-4a51-a152-525c675958a9")
 	)
 	(wire
 		(pts
@@ -10492,6 +10737,16 @@
 	)
 	(wire
 		(pts
+			(xy 187.96 38.1) (xy 208.28 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8669454f-04bf-407c-bcd4-853f01a58d78")
+	)
+	(wire
+		(pts
 			(xy 224.79 143.51) (xy 236.22 143.51)
 		)
 		(stroke
@@ -10562,16 +10817,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 41.91) (xy 208.28 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "98f6004c-12ce-4bd0-ae6b-449751bdfac7")
-	)
-	(wire
-		(pts
 			(xy 45.72 194.31) (xy 45.72 185.42)
 		)
 		(stroke
@@ -10589,6 +10834,16 @@
 			(type default)
 		)
 		(uuid "9a6d45ce-6792-46a5-a152-405423f77911")
+	)
+	(wire
+		(pts
+			(xy 186.69 27.94) (xy 187.96 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b2c10a5-4fe3-4415-95d9-23a4ace6d950")
 	)
 	(wire
 		(pts
@@ -10772,16 +11027,6 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 27.94) (xy 217.17 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b672ad47-0fd7-4b74-b17a-0c693b73d25b")
-	)
-	(wire
-		(pts
 			(xy 17.78 173.99) (xy 22.86 173.99)
 		)
 		(stroke
@@ -10799,16 +11044,6 @@
 			(type default)
 		)
 		(uuid "b9b3a75d-0df0-4158-8840-9e91becd5779")
-	)
-	(wire
-		(pts
-			(xy 217.17 35.56) (xy 217.17 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd99d589-c692-4eca-9855-a43ce5b76e4e")
 	)
 	(wire
 		(pts
@@ -10952,6 +11187,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 24.13) (xy 208.28 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1974fd5-2b4b-4877-ac88-4813b72cb431")
+	)
+	(wire
+		(pts
 			(xy 62.23 160.02) (xy 71.12 160.02)
 		)
 		(stroke
@@ -10989,16 +11234,6 @@
 			(type default)
 		)
 		(uuid "d5f12a43-636f-4188-8e53-c0b09ce7e9ca")
-	)
-	(wire
-		(pts
-			(xy 217.17 21.59) (xy 208.28 21.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7d7aaee-b3fc-463e-9b87-f54398ade30e")
 	)
 	(wire
 		(pts
@@ -11102,6 +11337,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 38.1) (xy 208.28 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb490ea9-24f2-464a-bc71-44f9b88bfbe3")
+	)
+	(wire
+		(pts
 			(xy 236.22 151.13) (xy 241.3 151.13)
 		)
 		(stroke
@@ -11149,6 +11394,16 @@
 			(type default)
 		)
 		(uuid "f1f14feb-4146-4314-a117-b014491afb5c")
+	)
+	(wire
+		(pts
+			(xy 187.96 30.48) (xy 173.99 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f289a543-125a-499b-9452-a0a585c4dbc7")
 	)
 	(wire
 		(pts
@@ -11219,6 +11474,16 @@
 			(type default)
 		)
 		(uuid "fc4b68da-d10b-4fd9-aa47-5234e37d8b81")
+	)
+	(wire
+		(pts
+			(xy 208.28 38.1) (xy 208.28 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd18e727-4a0a-4ef1-8024-a7a6625e01f4")
 	)
 	(wire
 		(pts
@@ -11307,6 +11572,28 @@
 		(uuid "1669afde-9021-4e62-a72d-1246f641b343")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 162.9615 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FAN_PWM"
+		(shape input)
+		(at 186.69 27.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18092b66-0e54-417b-8f3d-07b4c2d39613")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 175.0567 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -15436,6 +15723,135 @@
 		)
 	)
 	(symbol
+		(lib_id "New_Library:3-647166-5")
+		(at 187.96 27.94 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27a11cd8-37b2-4cbf-86d8-ba7e71d7a8c4")
+		(property "Reference" "J11"
+			(at 198.12 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3-647166-5"
+			(at 198.12 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Library:36471665"
+			(at 204.47 122.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F647166%7FR2%7Fpdf%7FEnglish%7FENG_CD_647166_R2.pdf%7F3-647166-5"
+			(at 204.47 222.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "MTA-100,Vertical Pin Header,5way"
+			(at 187.96 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "10.66"
+			(at 204.47 422.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "571-3-647166-5"
+			(at 204.47 522.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/3-647166-5?qs=xsTFCgGnzbLW5KrzNUDo5w%3D%3D"
+			(at 204.47 622.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "TE Connectivity"
+			(at 204.47 722.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "3-647166-5"
+			(at 204.47 822.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "f451ee07-a9f9-4e90-b97e-75c281fd1abb")
+		)
+		(pin "3"
+			(uuid "2513bc1d-e4aa-4e96-bf42-74a2b8616c60")
+		)
+		(pin "1"
+			(uuid "9b2998f1-0034-419e-a11e-89c23cb56c05")
+		)
+		(pin "4"
+			(uuid "314f715e-f92c-41f5-8ff1-6499b8fedec4")
+		)
+		(pin "2"
+			(uuid "211fa736-ca4a-4398-9393-e348a6dd5930")
+		)
+		(instances
+			(project ""
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "J11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 36.83 46.99 0)
 		(unit 1)
@@ -16342,76 +16758,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 149.86 97.79 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3d07cac0-73d7-4fee-a68c-0587d615c111")
-		(property "Reference" "C23"
-			(at 149.86 93.472 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" ".1uf"
-			(at 153.67 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 150.8252 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 149.86 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "530684cd-f202-4cf8-b69d-c904ab258809")
-		)
-		(pin "2"
-			(uuid "2b367adf-e2ba-4450-97ec-8ed93be837c6")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -18084,127 +18430,6 @@
 		)
 	)
 	(symbol
-		(lib_id "New_Library:3-647166-2")
-		(at 208.28 21.59 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5df166c9-a481-4659-a9b0-f1de39ac399e")
-		(property "Reference" "J8"
-			(at 200.66 33.0201 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "3-647166-2"
-			(at 204.47 30.4801 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Library:36471662"
-			(at 113.36 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F647166%7FR1%7Fpdf%7FEnglish%7FENG_CD_647166_R1.pdf%7F3-647166-2"
-			(at 13.36 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Headers & Wire Housings HDR 1X02P VRT T/H"
-			(at 208.28 21.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "10.66"
-			(at -186.64 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "571-3-647166-2"
-			(at -286.64 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/TE-Connectivity/3-647166-2?qs=xsTFCgGnzbJU1qz6Np9kzA%3D%3D"
-			(at -386.64 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "TE Connectivity"
-			(at -486.64 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "3-647166-2"
-			(at -586.64 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "e2e8b6f8-7cac-4c0f-bb89-5ed4579abc8f")
-		)
-		(pin "2"
-			(uuid "d56524c2-6de1-44ec-9477-08656c36a3bb")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "J8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 46.99 177.8 0)
 		(unit 1)
@@ -19404,159 +19629,6 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "dk_Diodes-Rectifiers-Single:1N5819HW-7-F")
-		(at 217.17 30.48 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "75e46123-3215-4e0e-8717-0fede56b6771")
-		(property "Reference" "D16"
-			(at 218.694 31.496 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N5819HW-7-F"
-			(at 219.71 33.0199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "digikey-footprints:SOD-123"
-			(at 222.25 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
-			(at 224.79 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "DIODE SCHOTTKY 40V 1A SOD123"
-			(at 227.33 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "MPN" "1N5819HW-7-F"
-			(at 229.87 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Category" "Discrete Semiconductor Products"
-			(at 232.41 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Family" "Diodes - Rectifiers - Single"
-			(at 234.95 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Datasheet_Link" "https://www.diodes.com/assets/Datasheets/ds30217.pdf"
-			(at 237.49 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "DK_Detail_Page" "/product-detail/en/diodes-incorporated/1N5819HW-7-F/1N5819HW-FDICT-ND/815283"
-			(at 240.03 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description_1" "DIODE SCHOTTKY 40V 1A SOD123"
-			(at 242.57 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Diodes Incorporated"
-			(at 245.11 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Status" "Active"
-			(at 247.65 35.56 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(pin "A"
-			(uuid "2fdf53da-75d2-492e-bb64-ccbd8fddca1a")
-		)
-		(pin "K"
-			(uuid "87950467-f9f6-4efe-b45b-a622da94d345")
-		)
-		(instances
-			(project "booster-tc-driver"
-				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
-					(reference "D16")
 					(unit 1)
 				)
 			)
@@ -22817,6 +22889,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 63.5 177.8 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b3094071-bd54-4d4f-961b-efae0e388a0b")
+		(property "Reference" "#PWR067"
+			(at 57.15 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 59.69 177.7999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 63.5 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65c9f75a-08a6-476b-882f-b1aea21c3a41")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "#PWR067")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 38.1 96.52 90)
 		(unit 1)
@@ -25236,6 +25375,76 @@
 			(project "booster-tc-driver"
 				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 67.31 177.8 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f009bc09-11a5-4c14-b521-ad3a7f7df639")
+		(property "Reference" "C13"
+			(at 69.342 174.752 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" ".1uf"
+			(at 68.5799 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 71.12 176.8348 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 67.31 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 67.31 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "697258ae-6b3b-402a-9cb6-4d5856644d46")
+		)
+		(pin "2"
+			(uuid "0d3a1dc0-a673-4f15-9d73-06f4eb2a680c")
+		)
+		(instances
+			(project "booster-tc-driver"
+				(path "/3c175d5e-f31a-4933-a865-8318878a5034"
+					(reference "C13")
 					(unit 1)
 				)
 			)
