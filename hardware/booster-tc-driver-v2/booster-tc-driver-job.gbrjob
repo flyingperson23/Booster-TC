@@ -3,9 +3,9 @@
     "GenerationSoftware": {
       "Vendor": "KiCad",
       "Application": "Pcbnew",
-      "Version": "8.0.1"
+      "Version": "8.0.4"
     },
-    "CreationDate": "2024-07-22T16:18:31-04:00"
+    "CreationDate": "2024-10-12T12:23:15-04:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -17,7 +17,7 @@
       "X": 53.35,
       "Y": 72.05
     },
-    "LayerNumber": 4,
+    "LayerNumber": 6,
     "BoardThickness": 1.6,
     "Finish": "None"
   },
@@ -28,8 +28,8 @@
       "PadToTrack": 0.1,
       "TrackToTrack": 0.1,
       "MinLineWidth": 0.2,
-      "TrackToRegion": 0.25,
-      "RegionToRegion": 0.25
+      "TrackToRegion": 0.2,
+      "RegionToRegion": 0.2
     },
     {
       "Layers": "Inner",
@@ -53,13 +53,23 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "booster-tc-driver-Pwr_Cu.gbr",
+      "Path": "booster-tc-driver-Pwr1_Cu.gbr",
       "FileFunction": "Copper,L3,Inr",
       "FilePolarity": "Positive"
     },
     {
+      "Path": "booster-tc-driver-Pwr2_Cu.gbr",
+      "FileFunction": "Copper,L4,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "booster-tc-driver-Gnd2_Cu.gbr",
+      "FileFunction": "Copper,L5,Inr",
+      "FilePolarity": "Positive"
+    },
+    {
       "Path": "booster-tc-driver-B_Cu.gbr",
-      "FileFunction": "Copper,L4,Bot",
+      "FileFunction": "Copper,L6,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -131,22 +141,46 @@
     },
     {
       "Type": "Dielectric",
-      "Thickness": 1.24,
+      "Thickness": 0.535,
       "Material": "FR4",
-      "Name": "Gnd.Cu/Pwr.Cu",
-      "Notes": "Type: dielectric layer 2 (from Gnd.Cu to Pwr.Cu)"
+      "Name": "Gnd.Cu/Pwr1.Cu",
+      "Notes": "Type: dielectric layer 2 (from Gnd.Cu to Pwr1.Cu)"
     },
     {
       "Type": "Copper",
       "Thickness": 0.035,
-      "Name": "Pwr.Cu"
+      "Name": "Pwr1.Cu"
     },
     {
       "Type": "Dielectric",
       "Thickness": 0.1,
       "Material": "FR4",
-      "Name": "Pwr.Cu/B.Cu",
-      "Notes": "Type: dielectric layer 3 (from Pwr.Cu to B.Cu)"
+      "Name": "Pwr1.Cu/Pwr2.Cu",
+      "Notes": "Type: dielectric layer 3 (from Pwr1.Cu to Pwr2.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Pwr2.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.535,
+      "Material": "FR4",
+      "Name": "Pwr2.Cu/Gnd2.Cu",
+      "Notes": "Type: dielectric layer 4 (from Pwr2.Cu to Gnd2.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Thickness": 0.035,
+      "Name": "Gnd2.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Thickness": 0.1,
+      "Material": "FR4",
+      "Name": "Gnd2.Cu/B.Cu",
+      "Notes": "Type: dielectric layer 5 (from Gnd2.Cu to B.Cu)"
     },
     {
       "Type": "Copper",
