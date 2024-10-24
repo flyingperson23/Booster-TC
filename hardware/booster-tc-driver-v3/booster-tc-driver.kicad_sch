@@ -11779,6 +11779,28 @@
 			)
 		)
 	)
+	(global_label "FAN_PWM"
+		(shape input)
+		(at 83.82 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "38b001f6-a737-4cfa-9b06-a9a6a129f80b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 72.1867 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "THERM2"
 		(shape input)
 		(at 116.84 72.39 0)
@@ -12105,6 +12127,28 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "FAN_EN"
+		(shape input)
+		(at 83.82 128.27 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "73a5b0fd-7164-4ac5-b4e7-08e74e7195f1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 73.88 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)

@@ -61,12 +61,6 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define PMP_EN_Pin GPIO_PIN_13
-#define PMP_EN_GPIO_Port GPIOC
-#define FAN_EN_Pin GPIO_PIN_14
-#define FAN_EN_GPIO_Port GPIOC
-#define CS_FAN_Pin GPIO_PIN_15
-#define CS_FAN_GPIO_Port GPIOC
 #define I_PRI_Pin GPIO_PIN_0
 #define I_PRI_GPIO_Port GPIOA
 #define CTP_1_Pin GPIO_PIN_1
@@ -94,16 +88,16 @@ void Error_Handler(void);
 #define VAC_SENSE_GPIO_Port GPIOB
 #define THERM_BOARD_Pin GPIO_PIN_12
 #define THERM_BOARD_GPIO_Port GPIOB
+#define FAN_EN_Pin GPIO_PIN_13
+#define FAN_EN_GPIO_Port GPIOB
 #define I_L_Pin GPIO_PIN_14
 #define I_L_GPIO_Port GPIOB
+#define FAN_PWM_Pin GPIO_PIN_15
+#define FAN_PWM_GPIO_Port GPIOB
 #define VBUS_SENSE_Pin GPIO_PIN_8
 #define VBUS_SENSE_GPIO_Port GPIOA
 #define PFC_Pin GPIO_PIN_9
 #define PFC_GPIO_Port GPIOA
-#define DRIVE_EN_Pin GPIO_PIN_10
-#define DRIVE_EN_GPIO_Port GPIOA
-#define CS_DRIVE_Pin GPIO_PIN_11
-#define CS_DRIVE_GPIO_Port GPIOA
 #define MODE_IN_Pin GPIO_PIN_12
 #define MODE_IN_GPIO_Port GPIOA
 #define TMS_Pin GPIO_PIN_13
