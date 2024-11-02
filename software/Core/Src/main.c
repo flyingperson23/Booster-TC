@@ -57,6 +57,7 @@ COMP_HandleTypeDef hcomp7;
 
 DAC_HandleTypeDef hdac2;
 DAC_HandleTypeDef hdac3;
+DAC_HandleTypeDef hdac4;
 
 FMAC_HandleTypeDef hfmac;
 
@@ -101,6 +102,7 @@ static void MX_TIM1_Init(void);
 static void MX_USART3_UART_Init(void);
 static void MX_ADC3_Init(void);
 static void MX_TIM15_Init(void);
+static void MX_DAC4_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -161,6 +163,7 @@ int main(void)
   MX_USART3_UART_Init();
   MX_ADC3_Init();
   MX_TIM15_Init();
+  MX_DAC4_Init();
   /* USER CODE BEGIN 2 */
   booster_init();
   /* USER CODE END 2 */
@@ -651,11 +654,11 @@ static void MX_COMP6_Init(void)
   /* USER CODE END COMP6_Init 1 */
   hcomp6.Instance = COMP6;
   hcomp6.Init.InputPlus = COMP_INPUT_PLUS_IO1;
-  hcomp6.Init.InputMinus = COMP_INPUT_MINUS_1_2VREFINT;
+  hcomp6.Init.InputMinus = COMP_INPUT_MINUS_DAC4_CH2;
   hcomp6.Init.OutputPol = COMP_OUTPUTPOL_NONINVERTED;
   hcomp6.Init.Hysteresis = COMP_HYSTERESIS_NONE;
   hcomp6.Init.BlankingSrce = COMP_BLANKINGSRC_NONE;
-  hcomp6.Init.TriggerMode = COMP_TRIGGERMODE_IT_RISING_FALLING;
+  hcomp6.Init.TriggerMode = COMP_TRIGGERMODE_IT_FALLING;
   if (HAL_COMP_Init(&hcomp6) != HAL_OK)
   {
     Error_Handler();
@@ -789,6 +792,53 @@ static void MX_DAC3_Init(void)
   /* USER CODE BEGIN DAC3_Init 2 */
 
   /* USER CODE END DAC3_Init 2 */
+
+}
+
+/**
+  * @brief DAC4 Initialization Function
+  * @param None
+  * @retval None
+  */
+static void MX_DAC4_Init(void)
+{
+
+  /* USER CODE BEGIN DAC4_Init 0 */
+
+  /* USER CODE END DAC4_Init 0 */
+
+  DAC_ChannelConfTypeDef sConfig = {0};
+
+  /* USER CODE BEGIN DAC4_Init 1 */
+
+  /* USER CODE END DAC4_Init 1 */
+
+  /** DAC Initialization
+  */
+  hdac4.Instance = DAC4;
+  if (HAL_DAC_Init(&hdac4) != HAL_OK)
+  {
+    Error_Handler();
+  }
+
+  /** DAC channel OUT2 config
+  */
+  sConfig.DAC_HighFrequency = DAC_HIGH_FREQUENCY_INTERFACE_MODE_AUTOMATIC;
+  sConfig.DAC_DMADoubleDataMode = DISABLE;
+  sConfig.DAC_SignedFormat = DISABLE;
+  sConfig.DAC_SampleAndHold = DAC_SAMPLEANDHOLD_DISABLE;
+  sConfig.DAC_Trigger = DAC_TRIGGER_NONE;
+  sConfig.DAC_Trigger2 = DAC_TRIGGER_NONE;
+  sConfig.DAC_OutputBuffer = DAC_OUTPUTBUFFER_DISABLE;
+  sConfig.DAC_ConnectOnChipPeripheral = DAC_CHIPCONNECT_INTERNAL;
+  sConfig.DAC_UserTrimming = DAC_TRIMMING_FACTORY;
+  if (HAL_DAC_ConfigChannel(&hdac4, &sConfig, DAC_CHANNEL_2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN DAC4_Init 2 */
+
+  /* USER CODE END DAC4_Init 2 */
 
 }
 
